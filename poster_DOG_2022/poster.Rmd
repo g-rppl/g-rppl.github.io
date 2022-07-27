@@ -1,0 +1,116 @@
+---
+main_topsize: 0.3 # percent coverage of the poster
+main_bottomsize: 0.083
+# ESSENTIALS
+title: '**Migratory decisions**'
+author:
+  - name: '**Georg Rüppel**'
+    affil: 1
+    main: true
+    orcid: '0000-0001-5459-6717'
+    twitter: georgrueppel 
+    email: georg.rueppel@ifv-vogelwarte.de
+  - name: Ommo Hüppop
+    affil: 1
+  - name: Heiko Schmaljohann
+    affil: 1,2
+  - name: Vera Brust
+    affil: 1
+affiliation:
+  - num: 1
+    address: Institute of Avian Research "Vogelwarte Helgoland"
+  - num: 2
+    address: Institute for Biology and Environmental Sciences, Carl von Ossietzky University Oldenburg
+main_findings:
+  - '<div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 120px; left:100px; margin: 0;
+  position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%)">
+  <div style="text-align: right"> Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
+  <div style="text-align: center"> <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute;
+  top: 65px; right: 600px"> [\*]{style="color: #cc0000; font-size: 120px"} </div>
+  </div>'
+logoleft_name:  "figures/BfN.svg"
+logoright_name: "figures/IfV.png"
+logocenter_name: 
+output: 
+  posterdown::posterdown_betterport:
+    self_contained: false
+    pandoc_args: --mathjax
+    number_sections: false
+    template: template.html
+bibliography: references.bib
+link-citations: true
+---
+
+# Introduction
+
+The progress of bird migration is defined by a sequential series of **trade-off decisions**, including departure, routing, and landing decisions. In combination, these three decisions shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumptions interconnected to environmental conditions [@schmaljohann2022].
+
+Individual departure timing during autumn migration likely depends on **migration strategy**, i.e. long- vs. short- to medium-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover [@packmor2020] . However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.
+
+## Objectives
+
+1.  [**Do departure and routing decisions differ between migration strategies in spring?**]{style="color: #0b4545"}
+2.  [**How many birds cross the German Bight?**]{style="color: #0b4545"}
+3.  [**Does migration strategy affect how birds adjust migratory decisions?**]{style="color: #0b4545"}
+
+# Methods
+
+<p style="max-width: 50%; float: left;">
+![](figures/motus.png){width="90%"}
+</p>
+
+We equipped 289 birds of seven songbird species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.
+
+# Results
+
+```{r echo=FALSE, out.width='60%', out.extra='style="float:right; padding-left:100px; padding-right:100px"', fig.align='right'}
+knitr::include_graphics("figures/mean.svg")
+```
+
+<p class="cap1">
+Mean departure probability and mean probability for offshore flights per species group during spring.
+</p>
+
+1.  [**Day-to-day departure probability among species increased with migration distance independently from routing decision.**]{style="color: #0b4545"}
+2.  [**We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.**]{style="color: #0b4545"}
+
+![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
+
+```{r echo=FALSE, out.width='65%', out.extra='style="float:right; padding-left:60px; padding-right:100px"', fig.align='right'}
+knitr::include_graphics("figures/dep_timing_2.svg")
+```
+
+<p class="cap3">
+Birds more likely departed under low relative humidity and during times with no precipitation.
+</p>
+
+![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="100%"}
+
+3.  [**We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.**]{style="color: #0b4545"}
+
+```{r echo=FALSE, out.width='60%', out.extra='style="float:right; padding-left:100px; padding-right:100px"', fig.align='right'}
+knitr::include_graphics("figures/dep_time.svg")
+```
+
+<p class="cap2">
+Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.
+</p>
+
+# References
+
+::: {#refs}
+:::
+
+::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; top: 50%;"}
+<div>
+
+[\*]{style="color: #cc0000; font-size: 120px"}
+
+</div>
+
+<div>
+
+*Arrival latitudes of songbirds after leaving coastal stopover sites in north-western Germany. **a)** Map indicating locations of tag deployment (triangles) and receiver stations where birds arrived after a endurance flight (dots, size equals to the number of individuals). The histogram on the left summarises the number of individuals detected per 0.1°. Offshore detections on Helgoland and FINO3 are given in light colours. Dashed black line indicates threshold latitude and longitude for flight categorisation as offshore (to the left) or onshore (to the right) flight. **b)** Bean plots of arrival latitudes per species and departure state. Extension of the bean plots represent kernel density estimations of the distribution of individual arrivals, given as small lines in the plot. Broad lines represent the mean arrival latitude per group and the overall average is given by a dashed line.*
+
+</div>
+:::
