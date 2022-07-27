@@ -30,7 +30,7 @@ main_findings:
   </div>'
 logoleft_name:  "figures/BfN.svg"
 logoright_name: "figures/IfV.png"
-logocenter_name: 
+logocenter_name: "figures/QR_poster.svg"
 output: 
   posterdown::posterdown_betterport:
     self_contained: false
@@ -56,7 +56,7 @@ Individual departure timing during autumn migration likely depends on **migratio
 # Methods
 
 <p style="max-width: 50%; float: left;">
-![](figures/motus.png){width="90%"}
+[![](figures/motus.png){width="90%"}](https://motus.org/)
 </p>
 
 We equipped 289 birds of seven songbird species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.
