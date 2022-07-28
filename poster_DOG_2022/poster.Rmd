@@ -1,6 +1,8 @@
 ---
-main_topsize: 0.3 # percent coverage of the poster
+main_topsize: 0.23 # percent coverage of the poster
 main_bottomsize: 0.083
+poster_height: "1189mm"
+poster_width: "841mm"
 # ESSENTIALS
 title: '**Migratory decisions in birds with different migration strategies during spring**'
 title_textsize: '100px'
@@ -23,10 +25,10 @@ affiliation:
   - num: 2
     address: Institute for Biology and Environmental Sciences, Carl von Ossietzky University Oldenburg
 main_findings: '
-<div style="text-align: right; font-size: 120px"> 
+<div style="text-align: right; font-size: 110px"> 
   Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
 <div style="text-align: center"> 
-  <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 65px; right: 590px"> [\*]{style="color: #cc0000; font-size: 120px"} 
+  <img src="figures/map_bean.svg" style="padding-top:50px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 90px; right: 515px"> [\*]{style="color: #cc0000; font-size: 110px"} 
 </div>'
 logoleft_name:  "figures/BfN.svg"
 logoright_name: "figures/IfV.png"
