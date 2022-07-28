@@ -26,7 +26,7 @@ main_findings: '
 <div style="text-align: right; font-size: 120px"> 
   Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
 <div style="text-align: center"> 
-  <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 65px; right: 600px"> [\*]{style="color: #cc0000; font-size: 120px"} 
+  <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 65px; right: 590px"> [\*]{style="color: #cc0000; font-size: 120px"} 
 </div>'
 logoleft_name:  "figures/BfN.svg"
 logoright_name: "figures/IfV.png"
@@ -80,6 +80,8 @@ Mean departure probability and mean probability for offshore flights per species
 knitr::include_graphics("figures/dep_timing_2.svg")
 ```
 
+\newpage
+
 <p class="cap2">
 Birds more likely departed under low relative humidity and during times with no precipitation.
 </p>
@@ -101,7 +103,7 @@ Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than
 ::: {#refs}
 :::
 
-::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; top: 50%;"}
+::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top: 100px;"}
 <div>
 
 [\*]{style="color: #cc0000; font-size: 120px"}
