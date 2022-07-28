@@ -8,7 +8,7 @@
 
 
 
-<title>Migratory decisions</title>
+<title>Migratory decisions in birds with different migration strategies during spring</title>
 
 
 
@@ -119,6 +119,10 @@ ol li::marker {
   color: #cc0000;
   font-weight: bold;
 }
+ol {
+  color: #0b4545;
+  font-weight: bold;
+}
 .caption {
 font-size: 20pt;
 font-style: italic;
@@ -137,15 +141,15 @@ padding-bottom: 450px;
 font-size: 20pt;
 font-style: italic;
 text-align: right;
-padding-top: 120px;
-padding-bottom: 80px;
+padding-top: 90px;
+padding-bottom: 200px;
 }
 .cap3 {
 font-size: 20pt;
 font-style: italic;
 text-align: right;
-padding-top: 140px;
-padding-bottom: 150px;
+padding-top: 120px;
+padding-bottom: 80px;
 }
 .references {
 font-size: 20px;
@@ -192,7 +196,7 @@ text-decoration: none;
 color: #008080;
 }
 #title {
-font-size: 125pt;
+font-size: 100px;
 text-align: left;
 margin: 0;
 line-height: 98%;
@@ -278,6 +282,16 @@ background-color: #0b4545;
 color: #ffffff90;
 font-family: Special Elite;
 background-image: linear-gradient(#0b4545 50%,#008080);
+}
+.main-grid {
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+position: absolute;
+left:100px; 
+margin: 0;
+top: 50%; 
+-ms-transform: translateY(-50%); 
+transform: translateY(-50%);
 }
 .main strong {
 color: #ffffff;
@@ -408,7 +422,7 @@ span > #tab:mytable {
 
 <div class="column outer">
 <div class="section">
-<h1 id="title"><strong>Migratory decisions</strong></h1><br>
+<h1 id="title"><strong>Migratory decisions in birds with different migration strategies during spring</strong></h1><br>
 <h3 id="author" class="author">
 
 <strong>Georg Rüppel</strong><sup> 1, <a class="orcid" href="https://orcid.org/0000-0001-5459-6717"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup><br>
@@ -436,15 +450,15 @@ span > #tab:mytable {
 <div id="objectives" class="section level2">
 <h2>Objectives</h2>
 <ol style="list-style-type: decimal">
-<li><span style="color: #0b4545"><strong>Do departure and routing decisions differ between migration strategies in spring?</strong></span></li>
-<li><span style="color: #0b4545"><strong>How many birds cross the German Bight?</strong></span></li>
-<li><span style="color: #0b4545"><strong>Does migration strategy affect how birds adjust migratory decisions?</strong></span></li>
+<li>Do departure and routing decisions differ between migration strategies in spring?</li>
+<li>How many birds cross the German Bight?</li>
+<li>Does migration strategy affect how birds adjust migratory decisions?</li>
 </ol>
 </div>
 </div>
 <div id="methods" class="section level1">
 <h1>Methods</h1>
-<p style="max-width: 50%; float: left;">
+<p style="max-width: 50%; float: left">
 <a href="https://motus.org/"><img src="figures/motus.png" style="width:90.0%" /></a>
 </p>
 <p>We equipped 289 birds of seven songbird species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.</p>
@@ -456,15 +470,15 @@ span > #tab:mytable {
 Mean departure probability and mean probability for offshore flights per species group during spring.
 </p>
 <ol style="list-style-type: decimal">
-<li><span style="color: #0b4545"><strong>Day-to-day departure probability among species increased with migration distance independently from routing decision.</strong></span></li>
-<li><span style="color: #0b4545"><strong>We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.</strong></span></li>
+<li>Day-to-day departure probability among species increased with migration distance independently from routing decision.</li>
+<li>We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.</li>
 </ol>
 <div class="figure">
 <img src="figures/dep_timing_1.svg" style="width:100.0%" alt="" />
 <p class="caption">Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.</p>
 </div>
 <p><img src="figures/dep_timing_2.svg" width="65%" style="float:right; padding-left:60px; padding-right:100px" style="display: block; margin: auto 0 auto auto;" /></p>
-<p class="cap3">
+<p class="cap2">
 Birds more likely departed under low relative humidity and during times with no precipitation.
 </p>
 <div class="figure">
@@ -472,10 +486,10 @@ Birds more likely departed under low relative humidity and during times with no 
 <p class="caption">Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.</p>
 </div>
 <ol start="3" style="list-style-type: decimal">
-<li><span style="color: #0b4545"><strong>We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.</strong></span></li>
+<li>We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.</li>
 </ol>
 <p><img src="figures/dep_time.svg" width="60%" style="float:right; padding-left:100px; padding-right:100px" style="display: block; margin: auto 0 auto auto;" /></p>
-<p class="cap2">
+<p class="cap3">
 Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.
 </p>
 </div>
@@ -501,14 +515,14 @@ Schmaljohann, Heiko, Cas Eikenaar, and Nir Sapir. 2022. <span>“Understanding t
 
 </div>
 <div class="main">
-<p><div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 120px; left:100px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%)">
-<div style="text-align: right">
+<div class="main-grid">
+<p><div style="text-align: right; font-size: 120px">
 Migration timing during spring depends on <strong>migration strategy</strong> while individual adjustments of <strong>migratory decisions</strong> are similar.
 </div>
 <div style="text-align: center">
 <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 65px; right: 600px"> <span style="color: #cc0000; font-size: 120px">*</span>
-</div>
 </div></p>
+</div>
 </div>
 <div class="main_bottom">
 <img id="main-img-left" src=figures/BfN.svg>

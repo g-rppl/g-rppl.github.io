@@ -2,7 +2,8 @@
 main_topsize: 0.3 # percent coverage of the poster
 main_bottomsize: 0.083
 # ESSENTIALS
-title: '**Migratory decisions**'
+title: '**Migratory decisions in birds with different migration strategies during spring**'
+title_textsize: '100px'
 author:
   - name: '**Georg Rüppel**'
     affil: 1
@@ -21,13 +22,12 @@ affiliation:
     address: Institute of Avian Research "Vogelwarte Helgoland"
   - num: 2
     address: Institute for Biology and Environmental Sciences, Carl von Ossietzky University Oldenburg
-main_findings:
-  - '<div style="display: grid; grid-template-columns: 1fr 1fr; font-size: 120px; left:100px; margin: 0;
-  position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%)">
-  <div style="text-align: right"> Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
-  <div style="text-align: center"> <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute;
-  top: 65px; right: 600px"> [\*]{style="color: #cc0000; font-size: 120px"} </div>
-  </div>'
+main_findings: '
+<div style="text-align: right; font-size: 120px"> 
+  Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
+<div style="text-align: center"> 
+  <img src="figures/map_bean.svg" style="padding-top:30px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 65px; right: 600px"> [\*]{style="color: #cc0000; font-size: 120px"} 
+</div>'
 logoleft_name:  "figures/BfN.svg"
 logoright_name: "figures/IfV.png"
 logocenter_name: "figures/QR_poster.svg"
@@ -49,13 +49,13 @@ Individual departure timing during autumn migration likely depends on **migratio
 
 ## Objectives
 
-1.  [**Do departure and routing decisions differ between migration strategies in spring?**]{style="color: #0b4545"}
-2.  [**How many birds cross the German Bight?**]{style="color: #0b4545"}
-3.  [**Does migration strategy affect how birds adjust migratory decisions?**]{style="color: #0b4545"}
+1.  Do departure and routing decisions differ between migration strategies in spring?
+2.  How many birds cross the German Bight?
+3.  Does migration strategy affect how birds adjust migratory decisions?
 
 # Methods
 
-<p style="max-width: 50%; float: left;">
+<p style="max-width: 50%; float: left">
 [![](figures/motus.png){width="90%"}](https://motus.org/)
 </p>
 
@@ -71,8 +71,8 @@ knitr::include_graphics("figures/mean.svg")
 Mean departure probability and mean probability for offshore flights per species group during spring.
 </p>
 
-1.  [**Day-to-day departure probability among species increased with migration distance independently from routing decision.**]{style="color: #0b4545"}
-2.  [**We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.**]{style="color: #0b4545"}
+1.  Day-to-day departure probability among species increased with migration distance independently from routing decision.
+2.  We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.
 
 ![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
 
@@ -80,19 +80,19 @@ Mean departure probability and mean probability for offshore flights per species
 knitr::include_graphics("figures/dep_timing_2.svg")
 ```
 
-<p class="cap3">
+<p class="cap2">
 Birds more likely departed under low relative humidity and during times with no precipitation.
 </p>
 
 ![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="100%"}
 
-3.  [**We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.**]{style="color: #0b4545"}
+3.  We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.
 
 ```{r echo=FALSE, out.width='60%', out.extra='style="float:right; padding-left:100px; padding-right:100px"', fig.align='right'}
 knitr::include_graphics("figures/dep_time.svg")
 ```
 
-<p class="cap2">
+<p class="cap3">
 Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.
 </p>
 

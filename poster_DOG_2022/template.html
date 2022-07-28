@@ -129,6 +129,10 @@ ol li::marker {
   color: #cc0000;
   font-weight: bold;
 }
+ol {
+  color: #0b4545;
+  font-weight: bold;
+}
 .caption {
 font-size: $if(caption_textsize)$$caption_textsize$$else$20pt$endif$;
 font-style: italic;
@@ -147,15 +151,15 @@ padding-bottom: 450px;
 font-size: $if(caption_textsize)$$caption_textsize$$else$20pt$endif$;
 font-style: italic;
 text-align: right;
-padding-top: 120px;
-padding-bottom: 80px;
+padding-top: 90px;
+padding-bottom: 200px;
 }
 .cap3 {
 font-size: $if(caption_textsize)$$caption_textsize$$else$20pt$endif$;
 font-style: italic;
 text-align: right;
-padding-top: 140px;
-padding-bottom: 150px;
+padding-top: 120px;
+padding-bottom: 80px;
 }
 .references {
 font-size: $if(reference_textsize)$$reference_textsize$$else$20px$endif$;
@@ -288,6 +292,16 @@ background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
 color: $if(main_textcol)$$main_textcol$$else$#ffffff$endif$$if(main_textalpha)$$main_textalpha$$else$90$endif$;
 font-family: $if(main_fontfamily)$$main_fontfamily$$else$Special Elite$endif$;
 background-image: linear-gradient($if(primary_colour)$$primary_colour$$else$#0b4545$endif$ 50%,$if(secondary_colour)$$secondary_colour$$else$#008080$endif$);
+}
+.main-grid {
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+position: absolute;
+left:100px; 
+margin: 0;
+top: 50%; 
+-ms-transform: translateY(-50%); 
+transform: translateY(-50%);
 }
 .main strong {
 color: $if(main_textcol)$$main_textcol$$else$#ffffff$endif$;
@@ -463,7 +477,9 @@ $body$
 
 </div>
 <div class="main">
+<div class="main-grid">
 <p>$for(main_findings)$$main_findings$$sep$<br><br> $endfor$</p>
+</div>
 </div>
 <div class="main_bottom">
 <img id="main-img-left" src=$if(logoleft_name)$$logoleft_name$$else$$endif$>
