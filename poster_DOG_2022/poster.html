@@ -33,7 +33,7 @@ Here are the required style attributes for css to make this poster work :)
 -->
 <style>
 @page {
-size: 841mm 1189mm;
+size: 841mm 1188mm;
 margin: 0;
 padding: 0;
 }
@@ -41,7 +41,7 @@ body {
 margin: 0px;
 padding: 0px;
 width: 841mm;
-height: 1189mm;
+height: 1188mm;
 text-align: justify;
 font-size: 45px;
 line-height: 1.05;
@@ -135,15 +135,22 @@ padding-right: 200px;
 font-size: 20pt;
 font-style: italic;
 text-align: right;
-padding-top: 330px;
-padding-bottom: 400px;
+padding-top: 310px;
+padding-bottom: 380px;
 }
 .cap2 {
+display: grid; 
+grid-template-columns: 1.2fr 0.8fr;
 font-size: 20pt;
 font-style: italic;
-text-align: right;
-padding-top: 70px;
-padding-bottom: 200px;
+text-align: left;
+padding-top: 0;
+padding-bottom: 10px;
+padding-left: 100px;
+padding-right: 20px;
+}
+.cap2c {
+margin-left: 100px;
 }
 .cap3 {
 font-size: 20pt;
@@ -163,7 +170,7 @@ padding: 0px;
 }
 .outer {
 width: 841mm;
-height: calc(1189mm *  (1 - 0.23 - 8.3e-2 - 0.01) );
+height: calc(1188mm *  (1 - 0.23 - 8.3e-2 - 0.01) );
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
 -moz-column-count: 3; /* Firefox */
 column-count: 3;
@@ -184,7 +191,7 @@ column-rule-style: none;
 column-rule-color: black;
 background-color: #ffffff;
 font-family: Rasa;
-margin-top: calc(1189mm *  0.23 );
+margin-top: calc(1188mm *  0.23 );
 padding-top: 1em;
 padding-bottom: 1em;
 }
@@ -277,7 +284,7 @@ text-align: left;
 }
 .main {
 width: 841mm;
-height: calc(1189mm * 0.23);
+height: calc(1188mm * 0.23);
 position: absolute;
 background-color: #0b4545;
 color: #ffffff90;
@@ -363,13 +370,13 @@ text-decoration: none;
 }
 .poster_wrap {
 width: 841mm;
-height: 1189mm;
+height: 1188mm;
 padding: 0cm;
 }
 .main_bottom {
 width: 841mm;
-height: calc(1189mm * 8.3e-2);
-margin-top: calc(1189mm * (1 - 8.3e-2));
+height: calc(1188mm * 8.3e-2);
+margin-top: calc(1188mm * (1 - 8.3e-2));
 position: absolute;
 background-color: #0b4545;
 background-image: linear-gradient(#008080 10%, #0b4545);
@@ -446,8 +453,8 @@ span > #tab:mytable {
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>The progress of bird migration is defined by a sequential series of <strong>trade-off decisions</strong>, including departure, routing, and landing decisions. In combination, these three decisions shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumptions interconnected to environmental conditions <span class="citation">(<a href="#ref-schmaljohann2022" role="doc-biblioref">Schmaljohann, Eikenaar, and Sapir 2022</a>)</span>.</p>
-<p>Individual departure timing during autumn migration likely depends on <strong>migration strategy</strong>, i.e. long- vs. short- to medium-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover <span class="citation">(<a href="#ref-packmor2020" role="doc-biblioref">Packmor et al. 2020</a>)</span> . However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.</p>
+<p>Bird migration is defined by a sequential series of <strong>trade-off decisions</strong>, including departure, routing, and landing decisions. In combination, these three aspects shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumptions, i.e. cost of transport under variable environmental conditions. <span class="citation">(<a href="#ref-schmaljohann2022" role="doc-biblioref">Schmaljohann, Eikenaar, and Sapir 2022</a>)</span>.</p>
+<p>Individual migratory decisions during autumn migration likely depend on <strong>migration strategy</strong>, i.e. long- vs. short- to medium-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover <span class="citation">(<a href="#ref-packmor2020" role="doc-biblioref">Packmor et al. 2020</a>)</span>. However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.</p>
 <div id="objectives" class="section level2">
 <h2>Objectives</h2>
 <ol style="list-style-type: decimal">
@@ -463,12 +470,13 @@ span > #tab:mytable {
 <a href="https://motus.org/"><img src="figures/motus.png" style="width:90.0%" /></a>
 </p>
 <p>We equipped 289 birds of seven songbird species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.</p>
+<div style="page-break-after: always;"></div>
 </div>
 <div id="results" class="section level1">
 <h1>Results</h1>
 <p><img src="figures/mean.svg" width="60%" style="float:right; padding-left:100px; padding-right:100px" style="display: block; margin: auto 0 auto auto;" /></p>
 <p class="cap1">
-Mean departure probability and mean probability for offshore flights per species group during spring.
+Mean departure probability and mean probability for offshore flights per species group and overall (grey line) during spring.
 </p>
 <ol style="list-style-type: decimal">
 <li>Day-to-day departure probability among species increased with migration distance independently from routing decision.</li>
@@ -478,11 +486,15 @@ Mean departure probability and mean probability for offshore flights per species
 <img src="figures/dep_timing_1.svg" style="width:100.0%" alt="" />
 <p class="caption">Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.</p>
 </div>
-<p><img src="figures/dep_timing_2.svg" width="65%" style="float:right; padding-left:60px; padding-right:100px" style="display: block; margin: auto 0 auto auto;" /></p>
-<div style="page-break-after: always;"></div>
-<p class="cap2">
-Birds more likely departed under low relative humidity and during times with no precipitation.
-</p>
+<p><img src='figures/dep_timing_2.svg' width='65%'> <img src='figures/dep_timing_3.svg' width='34%'></p>
+<div class="cap2">
+<div>
+Effects of air pressure change and low relative humidity differed between species but not migration strategy.
+</div>
+<div class="cap2c">
+Birds more likely departed during times with no precipitation.
+</div>
+</div>
 <div class="figure">
 <img src="figures/dep_decision.svg" style="width:100.0%" alt="" />
 <p class="caption">Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.</p>
@@ -494,6 +506,10 @@ Birds more likely departed under low relative humidity and during times with no 
 <p class="cap3">
 Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.
 </p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>We show that departure probability is related to migration strategy during spring, but found no consistent differences in reaction norms to prevailing environmental conditions between strategies. Our results suggest that migration timing during spring inherently depends on migration strategy while individual weather related adjustments of migratory decisions are similar between migration strategies. These findings enable a better understanding of migration ecology in general and help to link migratory decisions to individual fitness.</p>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
