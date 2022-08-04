@@ -66,42 +66,33 @@ We equipped 289 birds of seven songbird species from both migration strategies w
 \newpage 
 
 # Results
+<center>
+![Mean departure probability and mean probability for offshore flights per species group and migration strategy during spring. The overall means are indicated by horizontal lines.](figures/mean.svg){width="70%"}
+</center>
 
-```{r echo=FALSE, out.width='60%', out.extra='style="float:right; padding-left:100px; padding-right:100px"', fig.align='right'}
-knitr::include_graphics("figures/mean.svg")
-```
-
-<p class="cap1">
-Mean departure probability and mean probability for offshore flights per species group and overall (grey line) during spring.
-</p>
-
-1.  Day-to-day departure probability among species increased with migration distance independently from routing decision.
+1.  Day-to-day departure probability among species was higher in long-distance migrates independently from routing decision.
 2.  We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.
 
 ![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
 
-<img src='figures/dep_timing_2.svg' width='65%'> <img src='figures/dep_timing_3.svg' width='34%'> 
+<img src='figures/dep_timing_2.svg' width='65%'> <img src='figures/dep_timing_3.svg' width='33%'> 
 
-<div class="cap2">
+<div class="cap1">
   <div>
   Effects of air pressure change and low relative humidity differed between species but not migration strategy.
   </div>
-  <div class="cap2c">
+  <div class="cap1c">
   Birds more likely departed during times with no precipitation.
   </div>
 </div>
 
-![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="100%"}
+![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="83%"}
 
 3.  We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.
 
-```{r echo=FALSE, out.width='60%', out.extra='style="float:right; padding-left:100px; padding-right:100px"', fig.align='right'}
-knitr::include_graphics("figures/dep_time.svg")
-```
-
-<p class="cap3">
-Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.
-</p>
+<center>
+![Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.](figures/dep_time.svg){width="70%"}
+</center>
 
 # Conclusion
 
@@ -112,7 +103,7 @@ We show that departure probability is related to migration strategy during sprin
 ::: {#refs}
 :::
 
-::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top: 100px;"}
+::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top: 50px;"}
 <div>
 
 [\*]{style="color: #cc0000; font-size: 120px"}
