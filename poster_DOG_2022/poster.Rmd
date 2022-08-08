@@ -1,6 +1,6 @@
 ---
-main_topsize: 0.23 # percent coverage of the poster
-main_bottomsize: 0.083
+main_topsize: 0.22 # percent coverage of the poster !!!0.24 for pdf!!!
+main_bottomsize: 0.08
 poster_height: "1188mm"
 poster_width: "841mm"
 # ESSENTIALS
@@ -26,13 +26,14 @@ affiliation:
     address: Institute for Biology and Environmental Sciences, Carl von Ossietzky University Oldenburg
 main_findings: '
 <div style="text-align: right; font-size: 110px"> 
-  Migration timing during spring depends on **migration strategy** while individual adjustments of **migratory decisions** are similar. </div>
+  Migration timing during spring depends on **migration distance**, while individual adjustments of **departure and routing decisions** are similar. </div>
 <div style="text-align: center"> 
-  <img src="figures/map_bean.svg" style="padding-top:50px"> <img src="figures/bean.png" width="1%" style="position: absolute; top: 90px; right: 515px"> [\*]{style="color: #cc0000; font-size: 110px"} 
+  <img src="figures/map.svg" style="width: 55%; padding-top: 10px"> [\*]{style="font-size: 110px"} 
 </div>'
-logoleft_name:  "figures/BfN.svg"
+logoleft_name: "figures/BfN.svg"
 logoright_name: "figures/IfV.png"
 logocenter_name: "figures/QR_poster.svg"
+accent_colour: "#00000060"
 output: 
   posterdown::posterdown_betterport:
     self_contained: false
@@ -45,7 +46,7 @@ link-citations: true
 
 # Introduction
 
-Bird migration is defined by a sequential series of **trade-off decisions**, including departure, routing, and landing decisions. In combination, these three aspects shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumptions, i.e. cost of transport under variable environmental conditions. [@schmaljohann2022].
+Bird migration is defined by a sequential series of **trade-off decisions**, including departure, routing, and landing decisions. In combination, these three aspects shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumption, i.e. cost of transport under variable environmental conditions. [@schmaljohann2022].
 
 Individual migratory decisions during autumn migration likely depend on **migration strategy**, i.e. long- vs. short- to medium-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover [@packmor2020]. However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.
 
@@ -61,42 +62,42 @@ Individual migratory decisions during autumn migration likely depend on **migrat
 [![](figures/motus.png){width="90%"}](https://motus.org/)
 </p>
 
-We equipped 289 birds of seven songbird species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.
+We equipped 289 songbirds of seven species from both migration strategies with radio tags at coastal stopover sites along the German North Sea coast during spring and tracked them by means of an automated receiver network. Once departed, birds could either cross the German Bight or take a detour along the coast. Using a hierarchical multistate model, we estimated weather effects on daily migratory decisions, i.e. day-to-day departure decisions in concert with routing.
 
-\newpage 
+\newpage
 
 # Results
-<center>
-![Mean departure probability and mean probability for offshore flights per species group and migration strategy during spring. The overall means are indicated by horizontal lines.](figures/mean.svg){width="70%"}
-</center>
 
-1.  Day-to-day departure probability among species was higher in long-distance migrates independently from routing decision.
-2.  We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.
+<center>![Short- to medium-distance migrants departed 5.9 days (3.5--8.8 days) later than long-distance migrants, resulting in higher departure probabilities. The mean probability for an offshore flight differed between species but not migration strategies.](figures/mean.svg){width="70%"}</center>
+
+1.  Day-to-day departure probability among species was higher in long-distance migrants independently from routing decision.
+2.  We estimated that 56% (95% CrI: 47.8--58.2 %) of all birds crossed the German Bight.
 
 ![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
 
-<img src='figures/dep_timing_2.svg' width='65%'> <img src='figures/dep_timing_3.svg' width='33%'> 
+<img src="figures/dep_timing_2.svg" width="65%"/> <img src="figures/dep_timing_3.svg" width="33%"/>
 
-<div class="cap1">
-  <div>
-  Effects of air pressure change and low relative humidity differed between species but not migration strategy.
-  </div>
-  <div class="cap1c">
-  Birds more likely departed during times with no precipitation.
-  </div>
+::: cap1
+<div>
+
+The influence of air pressure change and low relative humidity differed between species but not migration strategy.
+
 </div>
+
+::: cap1c
+Birds more likely departed during times with no precipitation.
+:::
+:::
 
 ![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="83%"}
 
 3.  We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.
 
-<center>
-![Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.](figures/dep_time.svg){width="70%"}
-</center>
+<center>![Birds that followed the coastline departed 0.7 days (-1.8--3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1--9.2 %) later compared to offshore flights.](figures/dep_time.svg){width="70%"}</center>
 
 # Conclusion
 
-We show that departure probability is related to migration strategy during spring, but found no consistent differences in reaction norms to prevailing environmental conditions between strategies. Our results suggest that migration timing during spring inherently depends on migration strategy while individual weather related adjustments of migratory decisions are similar between migration strategies. These findings enable a better understanding of migration ecology in general and help to link migratory decisions to individual fitness.
+We show that departure probability is related to migration strategy during spring, but found no consistent differences in reaction norms to prevailing environmental conditions between strategies. Our results suggest that migration timing during spring inherently depends on migration strategy, while individual weather related adjustments of migratory decisions are similar between migration strategies. These findings enable a better understanding of migration ecology in general and help to link migratory decisions to individual fitness.
 
 # References
 
@@ -112,7 +113,7 @@ We show that departure probability is related to migration strategy during sprin
 
 <div>
 
-*Arrival latitudes of songbirds after leaving coastal stopover sites in north-western Germany. **a)** Map indicating locations of tag deployment (triangles) and receiver stations where birds arrived after a endurance flight (dots, size equals to the number of individuals). The histogram on the left summarises the number of individuals detected per 0.1°. Offshore detections on Helgoland and FINO3 are given in light colours. Dashed black line indicates threshold latitude and longitude for flight categorisation as offshore (to the left) or onshore (to the right) flight. **b)** Bean plots of arrival latitudes per species and departure state. Extension of the bean plots represent kernel density estimations of the distribution of individual arrivals, given as small lines in the plot. Broad lines represent the mean arrival latitude per group and the overall average is given by a dashed line.*
+Map indicating locations of tag deployment (triangles) and receiver stations where birds arrived after a endurance flight (dots, size equals to the number of individuals). The histogram on the left summarises the number of individuals detected per 0.1°. Offshore detections on Helgoland and FINO3 are given in light colours. Dashed black line indicates threshold latitude and longitude for flight categorisation as offshore (to the left) or onshore (to the right) flight.
 
 </div>
 :::
