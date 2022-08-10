@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Eine interaktive Darstellung der ornithologischen Erfassung der Greifswalder Oie</title>
+
+
+
+
+
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+<link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rasa' rel='stylesheet'>
+
+<!--
+Here are the required style attributes for css to make this poster work :)
+-->
+<style>
+@page {
+size: 841mm 1188mm;
+margin: 0;
+padding: 0;
+}
+body {
+margin: 0px;
+padding: 0px;
+width: 841mm;
+height: 1188mm;
+text-align: justify;
+font-size: 45px;
+line-height: 1.05;
+}
+/* RMarkdown Class Styles */
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+pre.sourceCode.r, pre.sourceCode.python {
+background-color: #ffffff20;
+border: solid #3c8dbc 1mm;
+border-radius: 0.5em;
+padding: 4mm;
+margin: auto;
+margin-top: 1em;
+margin-bottom: 1em;
+/* align-items: center; */
+}
+div.sourceCode {
+background-color: transparent;
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+}
+code.sourceCode.r, code.sourceCode.python {
+background-color: transparent;
+font-size: 20pt;
+border-radius: 2mm;
+}
+code {
+font-size: 25pt;
+font-family: monospace;
+background-color: #3c8dbc24;
+color: #3c8dbc;
+padding: 1.2mm;
+line-height: 1;
+border-radius: 2mm;
+}
+caption {
+margin-bottom: 10px;
+font-size: 20pt;
+font-style: italic;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #3c8dbc20;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  border-spacing: 0;
+  font-size: 40%;
+  border-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 1em;
+  padding-left: 1em;
+  line-height: 1em;
+}
+table {
+  margin: auto;
+}
+th {
+  padding-left: 5mm;
+  padding-right: 5mm;
+}
+.caption {
+font-size: 20pt;
+font-style: italic;
+padding-top: 0;
+}
+.references {
+font-size: 20px;
+line-height: 90%;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 0px;
+}
+.outer {
+width: 841mm;
+height: calc(1188mm *  (1 - 0.2 - 0.1 - 0.01) );
+-webkit-column-count: 3; /* Chrome, Safari, Opera */
+-moz-column-count: 3; /* Firefox */
+column-count: 3;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+column-gap: 0;
+padding-left: 0cm;
+padding-right: 0cm;
+/* -webkit-column-rule-width: 50%;
+-moz-column-rule-width: 50%;
+column-rule-width: 50%; */
+-webkit-column-rule-style: none;
+-moz-column-rule-style: none;
+column-rule-style: none;
+-webkit-column-rule-color: black;
+-moz-column-rule-color: black;
+column-rule-color: black;
+background-color: #ffffff;
+font-family: Rasa;
+margin-top: calc(1188mm *  0.2 );
+padding-top: 1em;
+padding-bottom: 1em;
+}
+span.citation {
+  color: #3c8dbc;
+  font-weight: bold;
+}
+a {
+text-decoration: none;
+color: #3c8dbc;
+}
+#title {
+font-size: 100px;
+text-align: left;
+margin: 0;
+line-height: 98%;
+border-bottom: 0;
+font-weight: normal;
+background: 0;
+}
+#author {
+color:#3378a0;
+margin: 0;
+line-height: 85%;
+font-size: 1.17em;
+}
+#affiliation {
+padding-top: 0.1em;
+color: ;
+font-style: italic;
+font-size: 25px;
+margin: 0;
+}
+sup {
+color: #00000000;
+}
+.affiliation sup {
+font-size: 20px;
+}
+.author {
+text-align: left;
+}
+.author sup {
+font-size: 30px;
+}
+.author_extra {
+color: #3c8dbc;
+margin: 0;
+line-height: 85%;
+font-size: 35px;
+text-align: left;
+}
+.outer h1, h2, h3, h4, h5, h6 {
+text-align: center;
+margin: 0;
+font-weight: bold;
+}
+.section h1 {
+  text-align:center;
+  padding-bottom:5px;
+  background:
+    linear-gradient(
+      to left,
+      #ffffff 1%,
+      #ffffff 20%,
+      #3378a075 33%,
+      #3378a0 50%,
+      #3378a075 66%,
+      #ffffff 80%,
+      #ffffff 99%
+    )
+    left
+    bottom
+    #ffffff
+    no-repeat;
+  background-size:100% 5px ;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.outer h2 {
+text-align: center;
+}
+.outer p, .level2 {
+color: #000000;
+}
+.outer ol {
+padding-left: 8%;
+padding-right: 8%;
+text-align: left;
+}
+.main {
+width: 841mm;
+height: calc(1188mm * 0.2);
+position: absolute;
+background-color: #3378a0;
+color: #ffffff90;
+font-family: Special Elite;
+background-image: linear-gradient(#3378a0 50%,#3c8dbc);
+}
+.main-grid {
+display: grid; 
+grid-template-columns: 0.8fr 1.2fr; 
+position: absolute;
+left:100px; 
+margin: 0;
+top: 50%; 
+-ms-transform: translateY(-50%); 
+transform: translateY(-50%);
+}
+.main strong {
+color: #ffffff;
+}
+.main strong > sup {
+color: #ffffff;
+}
+.main sup {
+color: #ffffff90;
+}
+#main-img-left {
+width: 10%;
+left: 0.5in;
+bottom: 0.7in;
+position: absolute;
+}
+#main-img-center {
+width: 10%;
+left: calc(841mm * 0.45);
+bottom: 0.6in;
+position: absolute;
+}
+#main-img-right {
+width: 10%;
+right: 0.5in;
+bottom: 0.2in;
+position: absolute;
+}
+.main p {
+font-size: 150px;
+font-family: Special Elite;
+text-align: center;
+margin: 0;
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+margin-left: 1em;
+}
+.fab {
+color: #00000060;
+font-size: 25px;
+}
+.twitter, i {
+color: #00000060;
+font-size: 35px;
+text-decoration: none;
+}
+a.email {
+text-decoration: none;
+color: #00000060;
+font-size: 35px;
+}
+.envelope {
+color: #00000060;
+font-size: 5px;
+text-decoration: none;
+}
+.globe {
+color: #00000060;
+font-size: 5px;
+text-decoration: none;
+}
+.globetext {
+color: #00000060;
+font-size: 35px;
+text-decoration: none;
+}
+.poster_wrap {
+width: 841mm;
+height: 1188mm;
+padding: 0cm;
+}
+.main_bottom {
+width: 841mm;
+height: calc(1188mm * 0.1);
+margin-top: calc(1188mm * (1 - 0.1));
+position: absolute;
+background-color: #3378a0;
+background-image: linear-gradient(#3c8dbc 10%, #3378a0);
+}
+.section {
+  padding-left: 10mm;
+  padding-right: 10mm;
+}
+span > #tab:mytable {
+  font-weight: bold;
+}
+.orcid img {
+  width: 3%;
+}
+.emphasis {
+  background-color: #008080;
+  color: #ffffff;
+  border: solid #0b2045 3mm;
+  margin: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+.emphasis h1 {
+  font-weight: bold;
+  background: none;
+  background-color: #0b2045;
+  padding-bottom: 5mm;
+  padding-top: 1mm;
+  margin-top: -1mm;
+  margin-right: -1mm;
+  margin-left: -1mm;
+}
+.emphasis blockquote {
+  border: 0;
+}
+.emphasis ol {
+  padding: 0;
+  padding-left: 8%;
+  font-size: 100%;
+  font-weight: bold;
+}
+.emphasis p {
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+
+<div class="column outer">
+<div class="section">
+<h1 id="title"><strong>Eine interaktive Darstellung der ornithologischen Erfassung der Greifswalder Oie</strong></h1><br>
+<h3 id="author" class="author">
+
+<strong>Georg Rüppel</strong><sup> , <a class="orcid" href="https://orcid.org/0000-0001-5459-6717"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup><br>
+<a class="twitter" href="https://mobile.twitter.com/georgrueppel"><i class="fab fa-twitter"></i>&nbsp;&nbsp;@georgrueppel</a><br>
+
+<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:georg.rueppel@ifv-vogelwarte.de" class="email">georg.rueppel@ifv-vogelwarte.de</a> <br>
+   </h3>
+
+<h5 id="author_extra", class="author_extra">
+ Saskia Schirmer,<sup></sup>
+ Thomas Klinner &amp;<sup></sup>
+ Jan von Rönn<sup></sup>
+</h5>
+
+
+</div>
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p style="max-width: 50%; float: left; padding-left: 2cm; padding-right: 2cm">
+<a href="https://motus.org/"><img src="figures/GOie.png" style="width:90.0%" /></a>
+</p>
+<p>Die Greifswalder Oie ist eine 54 ha kleine Insel in der Ostsee, 12 km östlich von Rügen und 10 km nördlich der Insel Usedom. Seit 1993 wird das Naturschutzgebiet im Auftrag des Landes Mecklenburg-Vorpommern vom <a href="https://www.jordsand.de">Verein Jordsand</a> betreut. Durch ihre geographische Lage vor der Küste ist die Greifswalder Oie prädestiniert für die Erforschung des Vogelzuges über der Ostsee. In Zusammenarbeit mit der <a href="https://www.beringungszentrale-hiddensee.de/">Beringungszentrale Hiddensee</a> betreibt der Verein Jordsand auf der Insel seit 1994 eine Registrierfangstation zum Monitoring des Vogelzuges. Bis heute wurden über eine halbe Million Vögel aus 196 Arten (überwiegend Singvögel auf dem Frühjahrs- und Herbstzug) beringt. Die Beobachtung der Vogelwelt der Greifswalder Oie wird durch die Kartierungen der Brutvögel, Wasservogelzählungen, Zugplan- und Zufallsbeobachtungen komplettiert. Insgesamt wurden bislang mindestens 319 Arten auf der Greifswalder Oie nachgewiesen.
+Um die gesammelten Daten der interessierten Öffentlichkeit zugänglich zu machen, haben wir alle vorhandenen Datenquellen gesichtet, kombiniert und in einer Shiny Applikation (shinyapps.io) visualisiert. Diese frei verfügbare App ermöglicht eine Vielzahl interaktiver Darstellungen, beispielsweise zu Phänologie und Brutbestand einzelner Arten, Beringungszahlen und Jahreszusammenfassungen. Zudem können mit einem Kartentool alle Wiederfunddaten von beringten Vögeln mit Bezug zur Greifswalder Oie dargestellt werden.</p>
+<p><span class="citation">(<a href="#ref-rüppel2022" role="doc-biblioref">Rüppel et al. 2022</a>)</span></p>
+<div id="dank" class="section level2">
+<h2>Dank</h2>
+<p>Wir danken allen ehemaligen und aktiven Helfer:innen, Föjler:innen, Beringer:innen und allen anderen für ihren Beitrag zum Gelingen der Arbeit auf der Insel. Für die Bereitstellung der Kontroll- und Wiederfunddaten von Vögeln mit Bezug zu anderen Beringungszentralen bedanken wir uns bei der Beringungszentrale Hiddensee und dem Dachverband Deutscher Avifaunisten danken wir für die Bereitstellung der ornitho-Daten.</p>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-rüppel2022" class="csl-entry">
+Rüppel, Georg, Saskia Schirmer, Thomas Klinner, and Jan von Rönn. 2022. <span>“Avifauna Greifswalder Oie.”</span> <a href="https://doi.org/10.5281/zenodo.6409748">https://doi.org/10.5281/zenodo.6409748</a>.
+</div>
+</div>
+</div>
+
+</div>
+<div class="main">
+<div class="main-grid">
+<p><div style="text-align: center">
+<img src="figures/app_demo.png" style="width: 80%; padding-top: 10px">
+</div>
+<div style="text-align: left; font-size: 150px; padding-top: 250px; padding-left: 50px">
+— Tiny but shiny —
+</div></p>
+</div>
+</div>
+<div class="main_bottom">
+<img id="main-img-left" src=./figures/logo.png>
+<img id="main-img-center" src=./figures/qr.svg>
+<img id="main-img-right" src=./figures/shiny-hex.png>
+</div>
+</div>
+
+
+
+</body>
+</html>
