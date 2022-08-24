@@ -247,11 +247,17 @@ color: $if(main_textcol)$$main_textcol$$else$#ffffff$endif$$if(main_textalpha)$$
 font-family: $if(main_fontfamily)$$main_fontfamily$$else$Special Elite$endif$;
 background-image: linear-gradient($if(primary_colour)$$primary_colour$$else$#0b4545$endif$ 50%,$if(secondary_colour)$$secondary_colour$$else$#008080$endif$);
 }
+.main-line {
+width: $if(poster_width)$$poster_width$$else$36in$endif$;
+height: 2cm;
+position: absolute;
+background-color: #000000;
+}
 .main-grid {
 display: grid; 
-grid-template-columns: 0.8fr 1.2fr; 
+grid-template-columns: 0.6fr 1.4fr; 
 position: absolute;
-left:100px; 
+left:50px; 
 margin: 0;
 top: 50%; 
 -ms-transform: translateY(-50%); 
@@ -267,9 +273,9 @@ color: $if(main_textcol)$$main_textcol$$else$#ffffff$endif$;
 color: $if(main_textcol)$$main_textcol$$else$#ffffff$endif$$if(main_textalpha)$$main_textalpha$$else$90$endif$;
 }
 #main-img-left {
-width: 12%;
+width: 18%;
 left: 0.5in;
-bottom: 0.5in;
+bottom: 1.15in;
 position: absolute;
 }
 #main-img-center {
@@ -279,9 +285,9 @@ bottom: 0.5in;
 position: absolute;
 }
 #main-img-right {
-width: 20.4%;
+width: 10.8%;
 right: 0.5in;
-bottom: 0.5in;
+bottom: 0.95in;
 position: absolute;
 }
 .main p {
@@ -431,6 +437,7 @@ $body$
 
 </div>
 <div class="main">
+<div class="main-line"> </div>
 <div class="main-grid">
 <p>$for(main_findings)$$main_findings$$sep$<br><br> $endfor$</p>
 </div>
@@ -439,6 +446,7 @@ $body$
 <img id="main-img-left" src=$if(logoleft_name)$$logoleft_name$$else$$endif$>
 <img id="main-img-center" src=$if(logocenter_name)$$logocenter_name$$else$$endif$>
 <img id="main-img-right" src=$if(logoright_name)$$logoright_name$$else$$endif$>
+<div class="main-line" style="bottom:0"> </div>
 </div>
 </div>
 

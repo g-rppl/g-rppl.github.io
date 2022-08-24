@@ -4,31 +4,29 @@ poster_width: 841mm
 main_topsize: 0.2 # percent coverage of the poster
 main_bottomsize: 0.1
 #ESSENTIALS
-title: "**Eine interaktive Darstellung der ornithologischen Erfassung der Greifswalder Oie**"
-title_textsize: "100px"
+title: "**Eine interaktive Darstellung der Vogelwelt der Greifswalder Oie**"
+title_textsize: "130px"
 author:
   - name: "**Georg Rüppel**"
     main: true
-    orcid: "0000-0001-5459-6717"
     twitter: georgrueppel
-    email: georg.rueppel@ifv-vogelwarte.de
+    email: georg.rueppel2@jordsand.de
   - name: Saskia Schirmer,
   - name: Thomas Klinner &
   - name: Jan von Rönn
 main_findings: '
 <div style="text-align: center"> 
-  <img src="figures/app_demo.png" style="width: 80%; padding-top: 10px">
+  <img src="figures/app_demo.png" style="width: 100%; padding-top: 80px">
 </div>
-<div style="text-align: left; font-size: 150px; padding-top: 250px; padding-left: 50px"> 
+<div style="text-align: center; font-size: 150px; padding-top: 320px; padding-left: 50px"> 
   --- Tiny but &nbsp; &nbsp; &nbsp; &nbsp; ---
-  <img src="figures/shiny-hex.png" width="10%" style="position: absolute; top: 130px; right: 570px">
+  <img src="figures/shiny-hex.png" width="10%" style="position: absolute; top: 200px; right: 560px">
 </div>'
 primary_colour: "#3378a0"
 secondary_colour: "#3c8dbc"
 accent_colour : "#00000000"
-logoleft_name: "./figures/logo.png"
-logoright_name: "./figures/vj.jpg"
-logocenter_name: "./figures/qr.svg"
+logoleft_name: "./figures/vj.jpg"
+logoright_name: "./figures/qr.svg"
 output: 
   posterdown::posterdown_betterport:
     self_contained: false
@@ -51,16 +49,16 @@ options(knitr.table.format = "html")
 
 # Einleitung
 
-<p style="max-width: 50%; float: left; padding-left: 2cm; padding-right: 2cm">
-[![](figures/GOie.png){width="90%"}](https://motus.org/)
-</p>
-
 Die Greifswalder Oie ist eine 54 ha kleine Insel in der Ostsee, 12 km östlich von Rügen und 10 km nördlich der Insel Usedom. Seit 1993 wird das Naturschutzgebiet im Auftrag des Landes Mecklenburg-Vorpommern vom [Verein Jordsand](https://www.jordsand.de) betreut. Durch ihre geographische Lage vor der Küste ist die Greifswalder Oie prädestiniert für die Erforschung des Vogelzuges über der Ostsee. In Zusammenarbeit mit der [Beringungszentrale Hiddensee](https://www.beringungszentrale-hiddensee.de/) betreibt der Verein Jordsand auf der Insel seit 1994 eine Registrierfangstation zum Monitoring des Vogelzuges. Bis heute wurden über eine halbe Million Vögel aus 196 Arten (überwiegend Singvögel auf dem Frühjahrs- und Herbstzug) beringt. Die Beobachtung der Vogelwelt der Greifswalder Oie wird durch die Kartierungen der Brutvögel, Wasser- vogelzählungen, Zugplan- und Zufallsbeobachtungen komplettiert. Insgesamt wurden bislang mindestens 319 Arten auf der Greifswalder Oie nachgewiesen.
 Um die gesammelten Daten der interessierten Öffentlichkeit zugänglich zu machen, haben wir alle vorhandenen Datenquellen gesichtet, kombiniert und in einer Shiny Applikation ([shinyapps.io](shinyapps.io)) visualisiert. Diese frei verfügbare App ermöglicht eine Vielzahl interaktiver Darstellungen, beispielsweise zu Phänologie und Brutbestand einzelner Arten, Beringungszahlen und Jahreszusammenfassungen. Zudem können mit einem Kartentool alle Wiederfunddaten von beringten Vögeln mit Bezug zur Greifswalder Oie dargestellt werden.
+
+<br>
 
 ## Dank
 
 Wir danken allen ehemaligen und aktiven Helfer:innen, Föjler:innen, Beringer:innen und allen anderen für ihren Beitrag zum Gelingen der Arbeit auf der Insel. Für die Bereitstellung der Kontroll- und Wiederfunddaten von Vögeln mit Bezug zu anderen Beringungszentralen bedanken wir uns bei der Beringungszentrale Hiddensee und dem Dachverband Deutscher Avifaunisten danken wir für die Bereitstellung der ornitho-Daten.
+
+<br>
 
 # Phänologie
 
@@ -106,5 +104,5 @@ Wir danken allen ehemaligen und aktiven Helfer:innen, Föjler:innen, Beringer:in
 <img src="figures/map_3.png" width="60%" style="position: absolute; bottom: 570px; right: 100px">
 
 <div style="position: absolute; max-width:1800px; bottom:460px; left:1200px">
-<p class="caption"> **Artenvergleich:** Die Fundorte von während dem Wegzug auf der Greifswalder Oie beringten Rotkehlchen, die im Winters wiedergefunden wurden, verteilen sich über Frankreich, Spanien und Nordafrika. Sperber ziehen ebenfalls in SW-Richtung, Wiederfunde von der Iberischen Halbinsel im Winter fehlen jedoch bislang. </p>
+<p class="caption"> **Artenvergleich:** Die Fundorte von während dem Wegzug auf der Greifswalder Oie beringten Rotkehlchen, die im Winter wiedergefunden wurden, verteilen sich über Frankreich, Spanien und Nordafrika. Sperber ziehen ebenfalls in SW-Richtung, Wiederfunde von der Iberischen Halbinsel im Winter fehlen jedoch bislang. </p>
 </div>
