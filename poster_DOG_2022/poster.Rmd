@@ -1,13 +1,13 @@
 ---
-main_topsize: 0.22 # percent coverage of the poster !!!0.24 for pdf!!!
+main_topsize: 0.23 # percent coverage of the poster !!!0.24 for pdf!!!
 main_bottomsize: 0.08
 poster_height: "1188mm"
 poster_width: "841mm"
 # ESSENTIALS
-title: '**Migratory decisions in birds with different migration strategies during spring**'
-title_textsize: '100px'
+title: "**Migratory decisions in birds with different migration strategies during spring**"
+title_textsize: "105px"
 author:
-  - name: '**Georg Rüppel**'
+  - name: "**Georg Rüppel**"
     affil: 1
     main: true
     orcid: '0000-0001-5459-6717'
@@ -31,8 +31,7 @@ main_findings: '
   <img src="figures/map.svg" style="width: 55%; padding-top: 10px"> [\*]{style="font-size: 110px"} 
 </div>'
 logoleft_name: "figures/BfN.svg"
-logoright_name: "figures/IfV.png"
-logocenter_name: "figures/QR_poster.svg"
+logoright_name: "figures/QR_poster.svg"
 accent_colour: "#00000060"
 output: 
   posterdown::posterdown_betterport:
@@ -50,7 +49,7 @@ Bird migration is defined by a sequential series of **trade-off decisions**, inc
 
 Individual migratory decisions during autumn migration likely depend on **migration strategy**, i.e. short- to medium- or long-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover [@packmor2020]. However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.
 
-## Objectives
+<h2 style="padding-top:20px"> Objectives </h2>
 
 1.  Do departure and routing decisions differ between migration strategies in spring?
 2.  How many birds cross the German Bight?
@@ -73,6 +72,8 @@ We equipped 289 songbirds of seven species from both migration strategies with r
 1.  Day-to-day departure probability among species was higher in long-distance migrants independently from routing decision.
 2.  We estimated that 56% (95% CrI: 47.8--58.2 %) of all birds crossed the German Bight.
 
+<center>![Long-distance migrants departed 7.8 days (5.2--11.1 days) earlier than short-distance migrants. Within the day of departure, offshore flights started 5.4% of night length (2--8.9 %) earlier and with less variation compared to onshore flights.](figures/dep_time.svg){width="80%"}</center>
+
 ![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
 
 <img src="figures/dep_timing_2.svg" width="65%"/> <img src="figures/dep_timing_3.svg" width="33%"/>
@@ -89,22 +90,20 @@ Birds more likely departed during times with no precipitation.
 :::
 :::
 
-![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="83%"}
+<cener>![Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.](figures/dep_decision.svg){width="83%"}</center>
 
 3.  We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.
 
-<center>![Birds that followed the coastline departed 0.7 days (-1.8--3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1--9.2 %) later compared to offshore flights.](figures/dep_time.svg){width="70%"}</center>
-
 # Conclusion
 
-Studying proximate mechanisms on individual departure and routing decisions in concert, our results suggest that migration timing during spring inherently depends on migration strategy, while individual weather related adjustments of migratory decisions are similar between strategies. We therefore suppose that, despite high individual en route flexibility, selection similarly affects birds of different migration strategies during spring in favour of early arrivals at the breeding grounds. These findings may also be of general importance to migratory animals, e.g. insects, but more studies on other migrant species and at other stopover sites are required to draw firm conclusions.
+Studying proximate mechanisms on individual departure and routing decisions in concert, our results suggest that migration timing during spring inherently depends on migration strategy, while individual weather related adjustments of migratory decisions are similar between strategies. We therefore suppose that, despite high individual en route flexibility, selection similarly affects birds of different migration strategies during spring in favour of early arrivals at the breeding grounds.
 
 # References
 
 ::: {#refs}
 :::
 
-::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top: 50px;"}
+::: {style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top:50pt"}
 <div>
 
 [\*]{style="color: #cc0000; font-size: 120px"}
@@ -117,3 +116,5 @@ Map indicating locations of tag deployment (triangles) and receiver stations whe
 
 </div>
 :::
+
+<center>![](figures/IfV.png){width="50%"}</center>

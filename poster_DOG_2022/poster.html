@@ -156,7 +156,7 @@ padding: 0px;
 }
 .outer {
 width: 841mm;
-height: calc(1188mm *  (1 - 0.22 - 8.0e-2 - 0.01) );
+height: calc(1188mm *  (1 - 0.23 - 8.0e-2 - 0.01) );
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
 -moz-column-count: 3; /* Firefox */
 column-count: 3;
@@ -177,7 +177,7 @@ column-rule-style: none;
 column-rule-color: black;
 background-color: #ffffff;
 font-family: Rasa;
-margin-top: calc(1188mm *  0.22 );
+margin-top: calc(1188mm *  0.23 );
 padding-top: 1em;
 padding-bottom: 1em;
 }
@@ -190,7 +190,7 @@ text-decoration: none;
 color: #008080;
 }
 #title {
-font-size: 100px;
+font-size: 105px;
 text-align: left;
 margin: 0;
 line-height: 98%;
@@ -270,7 +270,7 @@ text-align: left;
 }
 .main {
 width: 841mm;
-height: calc(1188mm * 0.22);
+height: calc(1188mm * 0.23);
 position: absolute;
 background-color: #0b4545;
 color: #ffffff90;
@@ -309,9 +309,9 @@ bottom: 0.3in;
 position: absolute;
 }
 #main-img-right {
-width: 9%;
+width: 8%;
 right: 0.5in;
-bottom: 0.35in;
+bottom: 0.3in;
 position: absolute;
 }
 .main p {
@@ -441,14 +441,14 @@ span > #tab:mytable {
 <h1>Introduction</h1>
 <p>Bird migration is defined by a sequential series of <strong>trade-off decisions</strong>, including departure, routing, and landing decisions. In combination, these three aspects shape the spatio-temporal patterns of an individual movement, and are thus directly linked to the distance travelled per time unit and to energy consumption, i.e. cost of transport under variable environmental conditions. <span class="citation">(<a href="#ref-schmaljohann2022" role="doc-biblioref">Schmaljohann, Eikenaar, and Sapir 2022</a>)</span>.</p>
 <p>Individual migratory decisions during autumn migration likely depend on <strong>migration strategy</strong>, i.e. short- to medium- or long-distance migrants, and birds of both strategies differently react to prevailing environmental conditions at stopover <span class="citation">(<a href="#ref-packmor2020" role="doc-biblioref">Packmor et al. 2020</a>)</span>. However, it remains unclear whether migration strategy similarly affects the adjustment of migratory decisions during spring, when early arrivals at the breeding grounds should be mutually beneficial for individual reproductive fitness.</p>
-<div id="objectives" class="section level2">
-<h2>Objectives</h2>
+<h2 style="padding-top:20px">
+Objectives
+</h2>
 <ol style="list-style-type: decimal">
 <li>Do departure and routing decisions differ between migration strategies in spring?</li>
 <li>How many birds cross the German Bight?</li>
 <li>Does migration strategy affect how birds adjust migratory decisions?</li>
 </ol>
-</div>
 </div>
 <div id="methods" class="section level1">
 <h1>Methods</h1>
@@ -470,6 +470,12 @@ span > #tab:mytable {
 <li>Day-to-day departure probability among species was higher in long-distance migrants independently from routing decision.</li>
 <li>We estimated that 56% (95% CrI: 47.8–58.2 %) of all birds crossed the German Bight.</li>
 </ol>
+<center>
+<div class="figure">
+<img src="figures/dep_time.svg" style="width:80.0%" alt="" />
+<p class="caption">Long-distance migrants departed 7.8 days (5.2–11.1 days) earlier than short-distance migrants. Within the day of departure, offshore flights started 5.4% of night length (2–8.9 %) earlier and with less variation compared to onshore flights.</p>
+</div>
+</center>
 <div class="figure">
 <img src="figures/dep_timing_1.svg" style="width:100.0%" alt="" />
 <p class="caption">Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.</p>
@@ -483,23 +489,15 @@ span > #tab:mytable {
 <p>Birds more likely departed during times with no precipitation.</p>
 </div>
 </div>
-<div class="figure">
-<img src="figures/dep_decision.svg" style="width:83.0%" alt="" />
-<p class="caption">Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds.</p>
-</div>
+<cener><img src="figures/dep_decision.svg" style="width:83.0%" alt="Routing was predicted by both wind components with higher probabilities for an offshore flight under easterly and southerly (offshore) winds peaking at low wind speeds." />
+</center>
 <ol start="3" style="list-style-type: decimal">
 <li>We found no consistent differences in reaction norms to prevailing environmental conditions between migration strategies.</li>
 </ol>
-<center>
-<div class="figure">
-<img src="figures/dep_time.svg" style="width:70.0%" alt="" />
-<p class="caption">Birds that followed the coastline departed 0.7 days (-1.8–3.1 days) later than birds that flew offshore. Within the day of departure, onshore flights started 5.6% of night length (2.1–9.2 %) later compared to offshore flights.</p>
-</div>
-</center>
 </div>
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
-<p>Studying proximate mechanisms on individual departure and routing decisions in concert, our results suggest that migration timing during spring inherently depends on migration strategy, while individual weather related adjustments of migratory decisions are similar between strategies. We therefore suppose that, despite high individual en route flexibility, selection similarly affects birds of different migration strategies during spring in favour of early arrivals at the breeding grounds. These findings may also be of general importance to migratory animals, e.g. insects, but more studies on other migrant species and at other stopover sites are required to draw firm conclusions.</p>
+<p>Studying proximate mechanisms on individual departure and routing decisions in concert, our results suggest that migration timing during spring inherently depends on migration strategy, while individual weather related adjustments of migratory decisions are similar between strategies. We therefore suppose that, despite high individual en route flexibility, selection similarly affects birds of different migration strategies during spring in favour of early arrivals at the breeding grounds.</p>
 </div>
 <div id="references" class="section level1">
 <h1>References</h1>
@@ -511,7 +509,7 @@ Packmor, Florian, Thomas Klinner, Bradley K Woodworth, Cas Eikenaar, and Heiko S
 Schmaljohann, Heiko, Cas Eikenaar, and Nir Sapir. 2022. <span>“Understanding the Ecological and Evolutionary Function of Stopover in Migrating Birds.”</span> <em>Biological Reviews</em>. <a href="https://doi.org/10.1111/brv.12839">https://doi.org/10.1111/brv.12839</a>.
 </div>
 </div>
-<div style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top: 50px;">
+<div style="text-align: auto; display: grid; grid-template-columns: 0.2fr 1.8fr; font-size: 20pt; padding-top:50pt">
 <div>
 <p><span style="color: #cc0000; font-size: 120px">*</span></p>
 </div>
@@ -519,6 +517,9 @@ Schmaljohann, Heiko, Cas Eikenaar, and Nir Sapir. 2022. <span>“Understanding t
 <p>Map indicating locations of tag deployment (triangles) and receiver stations where birds arrived after a migratory endurance flight (dots, size equals to the number of individuals). The histogram on the left summarises the number of individuals detected per 0.1°. Offshore detections on Helgoland and FINO3 are given in light colours. Dashed black line indicates threshold latitude and longitude for flight categorisation as offshore (to the left) or onshore (to the right) flight.</p>
 </div>
 </div>
+<center>
+<img src="figures/IfV.png" style="width:50.0%" />
+</center>
 </div>
 
 </div>
@@ -534,8 +535,8 @@ Migration timing during spring depends on <strong>migration distance</strong>, w
 </div>
 <div class="main_bottom">
 <img id="main-img-left" src=figures/BfN.svg>
-<img id="main-img-center" src=figures/QR_poster.svg>
-<img id="main-img-right" src=figures/IfV.png>
+<img id="main-img-center" src=>
+<img id="main-img-right" src=figures/QR_poster.svg>
 </div>
 </div>
 
