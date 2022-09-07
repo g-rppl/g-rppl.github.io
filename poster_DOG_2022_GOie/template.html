@@ -221,11 +221,11 @@ margin: 0;
 font-weight: bold;
 }
 .section h1 {
-  text-align:center;
-  padding-bottom:5px;
-  background-size:100% 5px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+text-align:center;
+padding-bottom:5px;
+background-size:100% 5px;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
 }
 .outer h2 {
 text-align: center;
@@ -283,6 +283,14 @@ width: 10.8%;
 left: calc($if(poster_width)$$poster_width$$else$36in$endif$ * 0.45);
 bottom: 0.5in;
 position: absolute;
+}
+#app_link {
+position: absolute; 
+bottom: 2.2in; 
+left: 7.7in;
+color: #ffffff90;
+font-size: 85px;
+font-family: $if(main_fontfamily)$$main_fontfamily$$else$Special Elite$endif$;
 }
 #main-img-right {
 width: 10.8%;
@@ -444,7 +452,7 @@ $body$
 </div>
 <div class="main_bottom">
 <img id="main-img-left" src=$if(logoleft_name)$$logoleft_name$$else$$endif$>
-<img id="main-img-center" src=$if(logocenter_name)$$logocenter_name$$else$$endif$>
+<a id="app_link" href="https://vereinjordsand.shinyapps.io/goie/"> https://vereinjordsand.shinyapps.io/goie/ </a>
 <img id="main-img-right" src=$if(logoright_name)$$logoright_name$$else$$endif$>
 <div class="main-line" style="bottom:0"> </div>
 </div>

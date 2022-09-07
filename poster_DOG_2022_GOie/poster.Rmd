@@ -10,7 +10,7 @@ author:
   - name: "**Georg Rüppel**"
     main: true
     twitter: georgrueppel
-    email: georg.rueppel2@jordsand.de
+    email: georg.rueppel2@jordsand.de <br> georg.rueppel@ifv-vogelwarte.de
   - name: Saskia Schirmer,
   - name: Thomas Klinner &
   - name: Jan von Rönn
@@ -18,9 +18,9 @@ main_findings: '
 <div style="text-align: center"> 
   <img src="figures/app_demo.png" style="width: 100%; padding-top: 80px">
 </div>
-<div style="text-align: center; font-size: 150px; padding-top: 320px; padding-left: 50px"> 
+<div style="text-align: center; font-size: 200px; padding-top: 300px"> 
   --- Tiny but &nbsp; &nbsp; &nbsp; &nbsp; ---
-  <img src="figures/shiny-hex.png" width="10%" style="position: absolute; top: 200px; right: 560px">
+  <img src="figures/shiny-hex.png" width="15%" style="position: absolute; top: 110px; right: 385px">
 </div>'
 primary_colour: "#3378a0"
 secondary_colour: "#3c8dbc"
@@ -57,8 +57,6 @@ Um die gesammelten Daten der interessierten Öffentlichkeit zugänglich zu mache
 ## Dank
 
 Wir danken allen ehemaligen und aktiven Helfer:innen, Föjler:innen, Beringer:innen und allen anderen für ihren Beitrag zum Gelingen der Arbeit auf der Insel. Für die Bereitstellung der Kontroll- und Wiederfunddaten von Vögeln mit Bezug zu anderen Beringungszentralen bedanken wir uns bei der Beringungszentrale Hiddensee und dem Dachverband Deutscher Avifaunisten danken wir für die Bereitstellung der ornitho-Daten.
-
-<br>
 
 # Phänologie
 
@@ -106,3 +104,5 @@ Wir danken allen ehemaligen und aktiven Helfer:innen, Föjler:innen, Beringer:in
 <div style="position: absolute; max-width:1800px; bottom:460px; left:1200px">
 <p class="caption"> **Artenvergleich:** Die Fundorte von während dem Wegzug auf der Greifswalder Oie beringten Rotkehlchen, die im Winter wiedergefunden wurden, verteilen sich über Frankreich, Spanien und Nordafrika. Sperber ziehen ebenfalls in SW-Richtung, Wiederfunde von der Iberischen Halbinsel im Winter fehlen jedoch bislang. </p>
 </div>
+
+<a href="https://vereinjordsand.shinyapps.io/goie/" style="position: absolute; bottom: 400px; left: 200px; color: black"> https://vereinjordsand.shinyapps.io/goie/ </a>
