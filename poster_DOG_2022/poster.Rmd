@@ -72,7 +72,7 @@ We equipped 289 songbirds of seven species from both migration strategies with r
 1.  Day-to-day departure probability among species was higher in long-distance migrants independently from routing decision.
 2.  We estimated that 56% (95% CrI: 47.8--58.2 %) of all birds crossed the German Bight.
 
-<center>![Short-distance migrants departed 7.8 days (5.2--11.1 days) later than long-distance migrants. Within the day of departure, offshore flights started 5.4% of night length (2.1--8.9 %) earlier and with less variation compared to onshore flights.](figures/dep_time.svg){width="80%"}</center>
+<center>![Short-distance migrants stayed on average 7.8 days (5.2--11.1 days) longer than  long-distance migrants at the stopover sites. Within the day of departure, offshore flights started 5.4% of night length (2.1--8.9 %) earlier and with less variation compared to onshore flights.](figures/dep_time.svg){width="80%"}</center>
 
 ![Birds more likely departed under westerly winds (easterly winds in Northern Wheatears) and light southerly winds.](figures/dep_timing_1.svg){width="100%"}
 
