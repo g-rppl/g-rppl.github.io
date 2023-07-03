@@ -1,0 +1,21 @@
+---
+title: "Science"
+listing:
+  - id: articles
+    contents: articles.yml
+    sort: "date desc"
+    template: ../html/listing.ejs
+title-block-banner: "#FB9E07"
+page-layout: full
+date-format: "YYYY"
+link-external-newwindow: true
+---
+
+## Journal articles
+
+::: {.grid}
+::: {.g-col-10}
+:::{#articles}
+:::
+:::
+:::

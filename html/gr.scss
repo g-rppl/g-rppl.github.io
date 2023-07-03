@@ -1,0 +1,129 @@
+/*-- scss:defaults --*/
+
+// Body
+$body-color: #212529 !default;
+$heading-font-weight:  300 !default;
+
+// Links
+$link-color: #EE6A24 !default;
+$link-decoration: none !default;
+$link-hover-color: #CF4446 !default;
+$link-hover-decoration: underline !default;
+
+// Navbar
+$navbar-bg: #2c3e50 !default;
+$navbar-fg: #ffffff !default;
+$navbar-hl: #FB9E07 !default;
+
+// Footer
+$footer-bg: #2c3e50 !default;
+$footer-fg: #dee2e6 !default;
+
+/*-- scss:rules --*/
+
+.nav-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 3em;
+
+    a {
+        color: #FB9E07;
+    }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+        text-align: center;
+        width: 100%;
+        min-height: 2em;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left {
+            text-align: left;
+        }
+
+        .nav-footer-right {
+            text-align: right;
+        }
+
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center {
+            flex: 1 1 33%;
+        }
+    }
+}
+
+// Research
+.paper {
+    .paper-entry {
+        display: flex;
+        flex-direction: row;
+        line-height: 1.3;
+        margin-bottom: 1.5em;
+        column-gap: 1em;
+
+        .body {
+            flex: 1 0 80%;
+        }
+
+        .metadata {
+            flex: 1 0 20%;
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+            line-height: 1.2;
+        }
+
+        .date {
+            font-weight: 300;
+            font-size: 0.85em;
+            margin-top: 0.3em;
+            text-align: right;
+        }
+        
+        .authors {
+            font-weight: 300;
+            font-size: 1em;
+            margin-bottom: 0.3em;
+        }
+
+        .abstract {
+            font-weight: 300;
+            font-size: 1em;
+            margin-top: 1em;
+            margin-bottom: 0.3em;
+            text-align: justify;
+        }
+
+        ul.paper-links {
+            padding: 0 0.5em;
+            background-color: shift-color(#FB9E07, -91%);
+            margin-bottom: 0;
+
+            .paper-link {
+                display: inline-block;
+                white-space: nowrap;
+                margin: 0;
+                padding: 0.5em 1em 0.5em 0;
+                font-size: 0.85em;
+            }
+        }
+    }
+}

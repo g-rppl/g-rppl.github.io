@@ -1,0 +1,61 @@
+project:
+  type: website
+
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+
+  resources:
+    - "files/**"
+
+freeze: true
+
+website:
+  title: "Georg Rüppel"
+  repo-url: "https://github.com/g-rppl/g-rppl.github.io"
+  
+  navbar:
+    pinned: true
+
+    left:
+      - text: "Science"
+        href: "Science/index.qmd"
+      - text: "GOie"
+        href: "GOie/index.qmd"
+    
+    right:
+      - icon: envelope
+        aria-label: email
+        href: "mailto:g_r@posteo.de"
+      - icon: mastodon
+        aria-label: mastodon
+        href: https://bayes.club/@georgrueppel
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/georgrueppel
+      - icon: github
+        aria-label: github
+        href: https://github.com/g-rppl
+      - text: "{{< fa brands soundcloud >}}"
+        href: https://soundcloud.com/georgrueppel
+
+  page-footer:
+    left: |
+      <span class="faux-block">[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span>      
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [0000-0001-5459-6717](https://orcid.org/0000-0001-5459-6717)</span>
+    right: |
+      <span class="faux-block">[View source on {{< fa brands github >}} GitHub](https://github.com/g-rppl/g-rppl.github.io)</span>
+
+format:
+  html:
+    theme: 
+      - html/gr.scss
+    toc: false
+    highlight-style: monokai

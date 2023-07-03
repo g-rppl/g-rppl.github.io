@@ -1,0 +1,16 @@
+---
+title: "Birds of Greifswalder Oie"
+listing:
+  - id: GOie
+    contents: GOie.yml
+    template: ../html/listing.ejs
+title-block-banner: "#FB9E07"
+link-external-newwindow: true
+---
+
+:::{#GOie}
+:::
+
+::: {.column-page}
+<iframe src="https://vereinjordsand.shinyapps.io/goie/" width="100%" height="700"></iframe>
+:::

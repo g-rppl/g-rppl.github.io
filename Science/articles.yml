@@ -1,0 +1,52 @@
+- title: "The urge to breed early: Similar responses to environmental conditions in short- and long-distance migrants during spring migration"
+  date: "2023"
+  authors: Georg Rüppel, Ommo Hüppop, Heiko Schmaljohann & Vera Brust
+  journal: Ecology and Evolution
+  abstract: "Birds migrating different distances experience different temporal, energetic, physiological, and physical constraints throughout migration, which is reflected in their migration strategy. Consequently, we predict different behavioural decisions to similar environmental cues between short- and long-distance migrants, which has been documented for autumn migration. Here we focus on the question whether trade-off decisions regarding departure, routing, and landing when alternating between migratory endurance flights and stopovers also differ during spring migration. As early arrivals at the breeding grounds should be ultimately favoured regardless of migration distance, selection may favour more similar behavioural decisions in spring than in autumn. We radio-tagged short- and long-distance migratory songbirds at stopover sites along the German North Sea coast during spring and automatically tracked their migratory behaviour using a large-scale network of receiver stations. Once departed, birds could either cross the sea or detour along the coast. We corrected for spatially biased detection data, using a hierarchical multistate model to assess how birds respond to variation in environmental conditions in their day-to-day departure decisions and route selection. The day-to-day departure probability was higher in long-distance migrants independently of the routing decision. Irrespective of migration distance, all species more likely departed under light winds and rainless conditions, while the influence of air pressure change and relative humidity was species-specific. By accounting for detection probabilities, we estimated that about half of all individuals of each species crossed the sea, but did not find differences between short- and long-distance migrants. Offshore flights were more likely when winds blew offshore and began earlier within the night compared to onshore flights. Our results suggest that selection more similarly affects birds of different migration distances in spring than in autumn. These findings put the focus toward how ultimate mechanisms may shape departure and routing decisions differently between migration seasons."
+  links:
+  - name: Final version
+    url: https://doi.org/10.1002/ece3.10223
+    icon: fa-solid fa-newspaper
+  - name: Data and code
+    url: https://doi.org/10.5281/zenodo.8026843
+    icon: fa-solid fa-box-archive
+  - name: GitHub repository
+    url: https://github.com/g-rppl/spring_migDist
+    icon: fa-brands fa-github
+  - name: Poster
+    url: ./spring_migDist/poster_DOG_2022/poster.pdf
+    icon: fa-regular fa-note-sticky
+
+- title: "Departure, routing and landing decisions of long-distance migratory songbirds in relation to weather"
+  date: "2023"
+  authors: Georg Rüppel, Ommo Hüppop, Sander Lagerveld, Heiko Schmaljohann & Vera Brust
+  journal: Royal Society Open Science
+  abstract: "Migrating birds flexibly adjust their individual migratory decisions, i.e. departing, routing and landing, based on intrinsic (e.g. energy stores) and extrinsic (e.g. landscape features and weather) factors modulating the endogenous stimuli. So far, these decisions have mostly been studied separately. Notably, we lack information on which factors landing decisions during active flight are based on. Therefore, we simultaneously recorded all three decisions in free-flying long-distance migratory songbirds in a coastal stopover area via regional-scale radio-telemetry and related them to the prevailing weather. Birds departed under favourable weather conditions resulting in specific nights with increased departure probability. Once departed, birds could either fly offshore or take a route along the coast, which was predicted by wind support. Radio-tracking revealed that departed individuals more likely interrupted their migratory endurance flight under overcast or headwind conditions. Studying departure, routing and landing decisions in concert, we highlight the importance of weather as a common driver across all migratory decisions. By radio-tracking individuals between stopovers, we provide evidence that avoidance of adverse weather conditions is an important function of stopover. Understanding how birds adjust migratory decisions and how they affect the timing of migration and survival is key to link migration performance to individual fitness."
+  links:
+  - name: Final version
+    url: https://doi.org/10.1098/rsos.221420
+    icon: fa-solid fa-newspaper
+  - name: Data and code
+    url: https://doi.org/10.6084/m9.figshare.c.6403996.v1
+    icon: fa-solid fa-box-archive
+  
+- title: "Does the length of the night affect the timing of nocturnal departures in a migratory songbird?"
+  date: "2018"
+  authors: Florian Müller, Georg Rüppel & Heiko Schmaljohann
+  journal: Animal Behaviour 
+  abstract: "Many animals perform their migratory movements within discrete time periods of the day/night cycle. Among migratory songbirds the majority of species generally restrict their migratory flights to the night. This makes their nocturnal departure timing a key factor determining the potential duration of migratory flights, which in turn affects their travel speed. Previous correlative studies revealed that part of the variation in nocturnal departure timing of migratory songbirds is explained by the respective length of the night, with birds departing earlier when nights are short. As the length of the night is inextricably linked to the time within the season, it has been impossible to ascertain which of the two factors drives variation in nocturnal departure timing. To virtually decouple both factors, that is, length of the night and time within the season, we conducted a series of short-term experiments using migratory songbirds caught at stopover. These birds were exposed to nights of either natural or shortened length. We found that birds exposed to shortened nights showed slightly earlier nocturnal departures than those exposed to the natural length of the night. This coincided with a seasonal pattern in the start of nocturnal migratory behaviour (migratory restlessness during the experimental period and actual departures following release) among birds, irrespective of the experimental treatment. Based on these results we suggest that birds' nocturnal departure timing pursues an innate seasonal schedule of migratory activity, which is adjusted to the current length of the night. Such a mechanistic framework provides the potential for cross-calibrating birds' innate seasonal schedule of migratory activity with the current spatiotemporal progress during migration."
+  links:
+  - name: Final version
+    url: https://doi.org/10.1016/j.anbehav.2018.05.018
+    icon: fa-solid fa-newspaper
+
+- title: "Endocrine regulation of migratory departure from stopover: Evidence from a longitudinal migratory restlessness study on northern wheatears"
+  date: "2018"
+  authors: Cas Eikenaar, Florian Müller, Georg Rüppel & Mareike Stöwe
+  journal: Hormones and Behavior
+  abstract: "Most migrating birds make stopovers to replenish fuel stores. The decision to resume migration from stopover to a large extent shapes the temporal organization of migration. This decision is known to be shaped by a suite of intrinsic and extrinsic factors such as the bird's fuel stores and current weather conditions. However, how departures from stopover are physiologically regulated is largely unknown. We here present data that strongly indicate that corticosterone, a hormone with a stimulatory effect on locomotion, acts as a mediator between fuel stores and departure from stopover. In migrating northern wheatears (<i>Oenanthe oenanthe</i>) temporarily caged at stopover, we observed a positive relationship between the change in fuel stores and the concurrent change in glucocorticoid metabolite (GCM) levels measured in the birds' droppings. We also found a positive relationship between the change in GCM levels and the change in the intensity of nocturnal migratory restlessness. As in northern wheatears nocturnal migratory restlessness is an accurate proxy for stopover departure likelihood, our results indicate that corticosterone mediates between fuel stores and the decision to resume migration. Our unique longitudinal study represents a considerable advance in our understanding of the endocrine regulation of avian migration."
+  links:
+  - name: Final version
+    url: https://doi.org/10.1016/j.yhbeh.2018.01.008
+    icon: fa-solid fa-newspaper
+

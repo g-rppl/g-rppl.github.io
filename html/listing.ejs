@@ -1,0 +1,39 @@
+```{=html}
+
+<div class="paper">
+    <% for (const paper of items) { %>
+        <div class="paper-entry">
+            <div class="metadata">
+                <p class="date">
+                    <%= paper.date %>
+                </p>
+                <img src="<%= paper.logo %>" width="120">
+            </div>
+            <div class="body">
+                <p class="title">
+                    <%= paper.title %>
+                </p>
+                <p class="authors">
+                    <%= paper.authors %> | <i>
+                            <%= paper.journal %>
+                        </i>
+                </p>
+                <p class="abstract">
+                    <%= paper.abstract %>
+                </p>
+
+                <ul class="paper-links">
+                    <% for (const link of paper.links) { %>
+                        <li class="paper-link">
+                            <a href="<%- link.url %>">
+                                <i class="<%- link.icon %>"></i>
+                                <%= link.name %>
+                            </a>
+                        </li>
+                        <% } %>
+                </ul>
+            </div>
+        </div>
+        <% } %>
+</div>
+```

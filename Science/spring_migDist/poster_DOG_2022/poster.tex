@@ -1,0 +1,250 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage{svg}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Migratory decisions in birds with different migration strategies during spring},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{\textbf{Migratory decisions in birds with different migration
+strategies during spring}}
+\author{true \and true \and true \and true}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Bird migration is defined by a sequential series of \textbf{trade-off
+decisions}, including departure, routing, and landing decisions. In
+combination, these three aspects shape the spatio-temporal patterns of
+an individual movement, and are thus directly linked to the distance
+travelled per time unit and to energy consumption, i.e.~cost of
+transport under variable environmental conditions.
+(\protect\hyperlink{ref-schmaljohann2022}{Schmaljohann, Eikenaar, and
+Sapir 2022}).
+
+Individual migratory decisions during autumn migration likely depend on
+\textbf{migration strategy}, i.e.~short- or long-distance migrants, and
+birds of both strategies differently react to prevailing environmental
+conditions at stopover (\protect\hyperlink{ref-packmor2020}{Packmor et
+al. 2020}). However, it remains unclear whether migration strategy
+similarly affects the adjustment of migratory decisions during spring,
+when early arrivals at the breeding grounds should be mutually
+beneficial for individual reproductive fitness.
+
+Objectives
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Do departure and routing decisions differ between migration strategies
+  in spring?
+\item
+  How many birds cross the German Bight?
+\item
+  Does migration strategy affect how birds adjust migratory decisions?
+\end{enumerate}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\href{https://motus.org/}{\includegraphics[width=0.9\textwidth,height=\textheight]{figures/motus.png}}
+
+We equipped 289 songbirds of seven species from both migration
+strategies with radio tags at coastal stopover sites along the German
+North Sea coast during spring and tracked them by means of an automated
+receiver network. Once departed, birds could either cross the German
+Bight or take a detour along the coast. Using a hierarchical multistate
+model, we estimated weather effects on daily migratory decisions,
+i.e.~day-to-day departure decisions in concert with routing.
+
+\newpage
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\begin{figure}
+\centering
+\includesvg[width=0.69\textwidth,height=\textheight]{figures/mean.svg}
+\caption{Departure probability was higher in long-distance migrants. The
+mean probability for an offshore flight differed between species but not
+migration strategies.}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Day-to-day departure probability among species was higher in
+  long-distance migrants independently from routing decision.
+\item
+  We estimated that 56\% (95\% CrI: 47.8--58.2 \%) of all birds crossed
+  the German Bight.
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includesvg[width=0.8\textwidth,height=\textheight]{figures/dep_time.svg}
+\caption{Short-distance migrants stayed on average 7.8 days (5.2--11.1
+days) longer than long-distance migrants at the stopover sites. Within
+the day of departure, offshore flights started 5.4\% of night length
+(2.1--8.9 \%) earlier and with less variation compared to onshore
+flights.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includesvg[width=1\textwidth,height=\textheight]{figures/dep_timing_1.svg}
+\caption{Birds more likely departed under westerly winds (easterly winds
+in Northern Wheatears) and light southerly winds.}
+\end{figure}
+
+The influence of air pressure change and low relative humidity differed
+between species but not migration strategy.
+
+Birds more likely departed during times with no precipitation.
+
+\includesvg[width=0.83\textwidth,height=\textheight]{figures/dep_decision.svg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  We found no consistent differences in reaction norms to prevailing
+  environmental conditions between migration strategies.
+\end{enumerate}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Studying proximate mechanisms on individual departure and routing
+decisions in concert, our results suggest that migration timing during
+spring inherently depends on migration strategy, while individual
+weather related adjustments of migratory decisions are similar between
+strategies. We therefore suppose that, despite high individual en route
+flexibility, selection similarly affects birds of different migration
+strategies during spring in favour of early arrivals at the breeding
+grounds.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-packmor2020}{}}%
+Packmor, Florian, Thomas Klinner, Bradley K Woodworth, Cas Eikenaar, and
+Heiko Schmaljohann. 2020. {``Stopover Departure Decisions in Songbirds:
+Do Long-Distance Migrants Depart Earlier and More Independently of
+Weather Conditions Than Medium-Distance Migrants?''} \emph{Movement
+Ecology} 8 (1): 1--14. \url{https://doi.org/10.1186/s40462-020-0193-1}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-schmaljohann2022}{}}%
+Schmaljohann, Heiko, Cas Eikenaar, and Nir Sapir. 2022. {``Understanding
+the Ecological and Evolutionary Function of Stopover in Migrating
+Birds.''} \emph{Biological Reviews}.
+\url{https://doi.org/10.1111/brv.12839}.
+
+\end{CSLReferences}
+
+{*}
+
+Map indicating locations of tag deployment (triangles) and receiver
+stations where birds arrived after a migratory endurance flight (dots,
+size equals to the number of individuals). The histogram on the left
+summarises the number of individuals detected per 0.1°. Offshore
+detections on Helgoland and FINO3 are given in light colours. Dashed
+black line indicates threshold latitude and longitude for flight
+categorisation as offshore (to the left) or onshore (to the right)
+flight.
+
+\includegraphics[width=0.5\textwidth,height=\textheight]{figures/IfV.png}
+
+\end{document}
