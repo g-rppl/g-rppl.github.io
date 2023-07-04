@@ -21,6 +21,10 @@ $footer-fg: #dee2e6 !default;
 
 /*-- scss:rules --*/
 
+.navbar-nav.navbar-nav-scroll.ms-auto {
+    flex-direction: row;
+}
+
 .nav-footer {
     align-items: flex-start;
     flex-wrap: wrap;
