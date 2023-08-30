@@ -37,14 +37,19 @@ website:
       - icon: mastodon
         aria-label: mastodon
         href: https://bayes.club/@georgrueppel
+        rel: me
+        target: _blank
       - icon: twitter
         aria-label: twitter
         href: https://twitter.com/georgrueppel
+        target: _blank
       - icon: github
         aria-label: github
         href: https://github.com/g-rppl
+        target: _blank
       - text: "{{< fa brands soundcloud >}}"
         href: https://soundcloud.com/georgrueppel
+        target: _blank
 
   page-footer:
     left: |
