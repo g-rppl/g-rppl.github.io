@@ -1,0 +1,12 @@
+- title: SunCalc.jl
+  authors: Georg Rüppel
+  journal: Author and maintainer
+  abstract: Calculate sun position and sunlight phases (times for sunrise, sunset, dusk, etc.) for a given location and time.
+  logo: https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg
+  links:
+  - name: GitHub repository
+    url: https://github.com/g-rppl/SunCalc.jl
+    icon: fa-brands fa-github
+  - name: Documentation
+    url: https://g-rppl.github.io/SunCalc.jl/dev/
+    icon: fa-solid fa-book

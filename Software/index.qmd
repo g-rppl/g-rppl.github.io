@@ -1,14 +1,24 @@
 ---
-title: "Birds of Greifswalder Oie"
+title: "Software"
 listing:
-  - id: GOie
-    contents: GOie.yml
+  - id: Packages
+    contents: packages.yml
+    template: ../html/listing.ejs
+  - id: Apps
+    contents: apps.yml
     template: ../html/listing.ejs
 title-block-banner: "#FB9E07"
 link-external-newwindow: true
 ---
 
-:::{#GOie}
+## Packages
+
+:::{#Packages}
+:::
+
+## Webapps
+
+:::{#Apps}
 :::
 
 ::: {.column-page}

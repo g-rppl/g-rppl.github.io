@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Georg Rüppel - Science</title>
+<title>Georg Rüppel - Software</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,20 +65,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    const listingTargetEl = window.document.querySelector('#listing-Packages .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-authors','listing-journal','listing-abstract','listing-links',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-authors','listing-journal','listing-abstract','listing-logo','listing-links',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-authors","listing-journal","listing-abstract","listing-links"],
+      searchColumns: ["listing-title","listing-authors","listing-journal","listing-abstract","listing-logo","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+    window['quarto-listings']['listing-Packages'] = new List('listing-Packages', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Apps .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-authors','listing-journal','listing-abstract','listing-logo','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-authors","listing-journal","listing-abstract","listing-logo","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Apps'] = new List('listing-Apps', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -103,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,11 +149,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../Science/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../Science/index.html" rel="" target="">
  <span class="menu-text">Science</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Software/index.html" rel="" target="">
+    <a class="nav-link active" href="../Software/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Software</span></a>
   </li>  
 </ul>
@@ -164,8 +192,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">Science</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Software</h1>
                       </div>
   </div>
     
@@ -178,157 +206,49 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<section id="journal-articles" class="level2">
-<h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
-<div class="grid">
-<div class="g-col-10">
-<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages</h2>
+<div id="listing-Packages" class="quarto-listing quarto-listing-container-custom">
 <div class="paper">
         <div class="paper-entry">
             <div class="metadata">
                 <p class="date">
-                    2023
                 </p>
-                <img class="img-fluid" src="" width="120">
+                <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Julia_Programming_Language_Logo.svg" width="120">
             </div>
             <div class="body">
                 <p class="title">
-                    The urge to breed early: Similar responses to environmental conditions in short- and long-distance migrants during spring migration
+                    SunCalc.jl
                 </p>
                 <p class="authors">
-                    Georg Rüppel, Ommo Hüppop, Heiko Schmaljohann &amp; Vera Brust | <i>
-                            Ecology and Evolution
+                    Georg Rüppel | <i>
+                            Author and maintainer
                         </i>
                 </p>
                 <p class="abstract">
-                    Birds migrating different distances experience different temporal, energetic, physiological, and physical constraints throughout migration, which is reflected in their migration strategy. Consequently, we predict different behavioural decisions to similar environmental cues between short- and long-distance migrants, which has been documented for autumn migration. Here we focus on the question whether trade-off decisions regarding departure, routing, and landing when alternating between migratory endurance flights and stopovers also differ during spring migration. As early arrivals at the breeding grounds should be ultimately favoured regardless of migration distance, selection may favour more similar behavioural decisions in spring than in autumn. We radio-tagged short- and long-distance migratory songbirds at stopover sites along the German North Sea coast during spring and automatically tracked their migratory behaviour using a large-scale network of receiver stations. Once departed, birds could either cross the sea or detour along the coast. We corrected for spatially biased detection data, using a hierarchical multistate model to assess how birds respond to variation in environmental conditions in their day-to-day departure decisions and route selection. The day-to-day departure probability was higher in long-distance migrants independently of the routing decision. Irrespective of migration distance, all species more likely departed under light winds and rainless conditions, while the influence of air pressure change and relative humidity was species-specific. By accounting for detection probabilities, we estimated that about half of all individuals of each species crossed the sea, but did not find differences between short- and long-distance migrants. Offshore flights were more likely when winds blew offshore and began earlier within the night compared to onshore flights. Our results suggest that selection more similarly affects birds of different migration distances in spring than in autumn. These findings put the focus toward how ultimate mechanisms may shape departure and routing decisions differently between migration seasons.
+                    Calculate sun position and sunlight phases (times for sunrise, sunset, dusk, etc.) for a given location and time.
                 </p>
                 <ul class="paper-links">
                         <li class="paper-link">
-                            <a href="https://doi.org/10.1002/ece3.10223">
-                                <i class="fa-solid fa-newspaper"></i>
-                                Final version
-                            </a>
-                        </li>
-                        <li class="paper-link">
-                            <a href="https://doi.org/10.5281/zenodo.8026843">
-                                <i class="fa-solid fa-box-archive"></i>
-                                Data and code
-                            </a>
-                        </li>
-                        <li class="paper-link">
-                            <a href="https://github.com/g-rppl/spring_migDist">
+                            <a href="https://github.com/g-rppl/SunCalc.jl">
                                 <i class="fa-brands fa-github"></i>
                                 GitHub repository
                             </a>
                         </li>
                         <li class="paper-link">
-                            <a href="./spring_migDist/poster_DOG_2022/poster.pdf">
-                                <i class="fa-regular fa-note-sticky"></i>
-                                Poster
-                            </a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-        <div class="paper-entry">
-            <div class="metadata">
-                <p class="date">
-                    2023
-                </p>
-                <img class="img-fluid" src="" width="120">
-            </div>
-            <div class="body">
-                <p class="title">
-                    Departure, routing and landing decisions of long-distance migratory songbirds in relation to weather
-                </p>
-                <p class="authors">
-                    Georg Rüppel, Ommo Hüppop, Sander Lagerveld, Heiko Schmaljohann &amp; Vera Brust | <i>
-                            Royal Society Open Science
-                        </i>
-                </p>
-                <p class="abstract">
-                    Migrating birds flexibly adjust their individual migratory decisions, i.e. departing, routing and landing, based on intrinsic (e.g. energy stores) and extrinsic (e.g. landscape features and weather) factors modulating the endogenous stimuli. So far, these decisions have mostly been studied separately. Notably, we lack information on which factors landing decisions during active flight are based on. Therefore, we simultaneously recorded all three decisions in free-flying long-distance migratory songbirds in a coastal stopover area via regional-scale radio-telemetry and related them to the prevailing weather. Birds departed under favourable weather conditions resulting in specific nights with increased departure probability. Once departed, birds could either fly offshore or take a route along the coast, which was predicted by wind support. Radio-tracking revealed that departed individuals more likely interrupted their migratory endurance flight under overcast or headwind conditions. Studying departure, routing and landing decisions in concert, we highlight the importance of weather as a common driver across all migratory decisions. By radio-tracking individuals between stopovers, we provide evidence that avoidance of adverse weather conditions is an important function of stopover. Understanding how birds adjust migratory decisions and how they affect the timing of migration and survival is key to link migration performance to individual fitness.
-                </p>
-                <ul class="paper-links">
-                        <li class="paper-link">
-                            <a href="https://doi.org/10.1098/rsos.221420">
-                                <i class="fa-solid fa-newspaper"></i>
-                                Final version
-                            </a>
-                        </li>
-                        <li class="paper-link">
-                            <a href="https://doi.org/10.6084/m9.figshare.c.6403996.v1">
-                                <i class="fa-solid fa-box-archive"></i>
-                                Data and code
-                            </a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-        <div class="paper-entry">
-            <div class="metadata">
-                <p class="date">
-                    2018
-                </p>
-                <img class="img-fluid" src="" width="120">
-            </div>
-            <div class="body">
-                <p class="title">
-                    Does the length of the night affect the timing of nocturnal departures in a migratory songbird?
-                </p>
-                <p class="authors">
-                    Florian Müller, Georg Rüppel &amp; Heiko Schmaljohann | <i>
-                            Animal Behaviour
-                        </i>
-                </p>
-                <p class="abstract">
-                    Many animals perform their migratory movements within discrete time periods of the day/night cycle. Among migratory songbirds the majority of species generally restrict their migratory flights to the night. This makes their nocturnal departure timing a key factor determining the potential duration of migratory flights, which in turn affects their travel speed. Previous correlative studies revealed that part of the variation in nocturnal departure timing of migratory songbirds is explained by the respective length of the night, with birds departing earlier when nights are short. As the length of the night is inextricably linked to the time within the season, it has been impossible to ascertain which of the two factors drives variation in nocturnal departure timing. To virtually decouple both factors, that is, length of the night and time within the season, we conducted a series of short-term experiments using migratory songbirds caught at stopover. These birds were exposed to nights of either natural or shortened length. We found that birds exposed to shortened nights showed slightly earlier nocturnal departures than those exposed to the natural length of the night. This coincided with a seasonal pattern in the start of nocturnal migratory behaviour (migratory restlessness during the experimental period and actual departures following release) among birds, irrespective of the experimental treatment. Based on these results we suggest that birds' nocturnal departure timing pursues an innate seasonal schedule of migratory activity, which is adjusted to the current length of the night. Such a mechanistic framework provides the potential for cross-calibrating birds' innate seasonal schedule of migratory activity with the current spatiotemporal progress during migration.
-                </p>
-                <ul class="paper-links">
-                        <li class="paper-link">
-                            <a href="https://doi.org/10.1016/j.anbehav.2018.05.018">
-                                <i class="fa-solid fa-newspaper"></i>
-                                Final version
-                            </a>
-                        </li>
-                </ul>
-            </div>
-        </div>
-        <div class="paper-entry">
-            <div class="metadata">
-                <p class="date">
-                    2018
-                </p>
-                <img class="img-fluid" src="" width="120">
-            </div>
-            <div class="body">
-                <p class="title">
-                    Endocrine regulation of migratory departure from stopover: Evidence from a longitudinal migratory restlessness study on northern wheatears
-                </p>
-                <p class="authors">
-                    Cas Eikenaar, Florian Müller, Georg Rüppel &amp; Mareike Stöwe | <i>
-                            Hormones and Behavior
-                        </i>
-                </p>
-                <p class="abstract">
-                    Most migrating birds make stopovers to replenish fuel stores. The decision to resume migration from stopover to a large extent shapes the temporal organization of migration. This decision is known to be shaped by a suite of intrinsic and extrinsic factors such as the bird's fuel stores and current weather conditions. However, how departures from stopover are physiologically regulated is largely unknown. We here present data that strongly indicate that corticosterone, a hormone with a stimulatory effect on locomotion, acts as a mediator between fuel stores and departure from stopover. In migrating northern wheatears (<i>Oenanthe oenanthe</i>) temporarily caged at stopover, we observed a positive relationship between the change in fuel stores and the concurrent change in glucocorticoid metabolite (GCM) levels measured in the birds' droppings. We also found a positive relationship between the change in GCM levels and the change in the intensity of nocturnal migratory restlessness. As in northern wheatears nocturnal migratory restlessness is an accurate proxy for stopover departure likelihood, our results indicate that corticosterone mediates between fuel stores and the decision to resume migration. Our unique longitudinal study represents a considerable advance in our understanding of the endocrine regulation of avian migration.
-                </p>
-                <ul class="paper-links">
-                        <li class="paper-link">
-                            <a href="https://doi.org/10.1016/j.yhbeh.2018.01.008">
-                                <i class="fa-solid fa-newspaper"></i>
-                                Final version
+                            <a href="https://g-rppl.github.io/SunCalc.jl/dev/">
+                                <i class="fa-solid fa-book"></i>
+                                Documentation
                             </a>
                         </li>
                 </ul>
@@ -339,7 +259,66 @@ ul.task-list li input[type="checkbox"] {
 No matching items
 </div>
 </div>
+</section>
+<section id="webapps" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="webapps">Webapps</h2>
+<div id="listing-Apps" class="quarto-listing quarto-listing-container-custom">
+
+<div class="paper">
+        <div class="paper-entry">
+            <div class="metadata">
+                <p class="date">
+                </p>
+                <img class="img-fluid" src="https://raw.githubusercontent.com/g-rppl/goie_shiny/master/www/shiny-hex.png" width="120">
+            </div>
+            <div class="body">
+                <p class="title">
+                    Die Vögel der Greifswalder Oie
+                </p>
+                <p class="authors">
+                    Georg Rüppel, Saskia Schirmer, Thomas Klinner &amp; Jan von Rönn | <i>
+                            Author and maintainer
+                        </i>
+                </p>
+                <p class="abstract">
+                    This shiny app is an interactive presentation of the ringing and observation data from the island Greifswalder Oie. It does not contain any significant interpretations and does not claim to be complete.
+                </p>
+                <ul class="paper-links">
+                        <li class="paper-link">
+                            <a href="https://is.gd/xnT35p">
+                                <i class="fa-solid fa-earth-europe"></i>
+                                Explore
+                            </a>
+                        </li>
+                        <li class="paper-link">
+                            <a href="https://zenodo.org/record/6409748">
+                                <i class="fa-solid fa-box-archive"></i>
+                                Citable version
+                            </a>
+                        </li>
+                        <li class="paper-link">
+                            <a href="https://github.com/g-rppl/goie_shiny">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub repository
+                            </a>
+                        </li>
+                        <li class="paper-link">
+                            <a href="./poster_DOG_2022/poster.pdf">
+                                <i class="fa-regular fa-note-sticky"></i>
+                                Poster
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
 </div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div class="column-page">
+<iframe src="https://vereinjordsand.shinyapps.io/goie/" width="100%" height="700">
+</iframe>
 </div>
 
 

@@ -27,8 +27,8 @@ website:
     left:
       - text: "Science"
         href: "Science/index.qmd"
-      - text: "GOie"
-        href: "GOie/index.qmd"
+      - text: "Software"
+        href: "Software/index.qmd"
     
     right:
       - icon: envelope

@@ -1,5 +1,6 @@
 - title: Die Vögel der Greifswalder Oie
   authors: Georg Rüppel, Saskia Schirmer, Thomas Klinner & Jan von Rönn
+  journal: Author and maintainer
   abstract: This shiny app is an interactive presentation of the ringing and observation data from the island Greifswalder Oie. It does not contain any significant interpretations and does not claim to be complete.
   logo: https://raw.githubusercontent.com/g-rppl/goie_shiny/master/www/shiny-hex.png
   links:
