@@ -13,7 +13,7 @@ link-external-newwindow: true
 :::
 ::: {.g-col-12 .g-col-sm-8}
 
-I'm an ornithologist at the [University of Oldenburg](https://uol.de/en/migration-ecology) with a main research interest and passion in bird migration. I care a lot about getting the science right and I strive for modest, open, reproducible and fair research. Currently, I'm working on a project focussing on offshore songbird migration across the North Sea using [motus](https://motus.org)-powered radio-tracking. [R](https://www.r-project.org/) and [Stan](https://mc-stan.org/) are my go-to languages for applied data analysis. 
+I'm an ornithologist at the [University of Oldenburg](https://uol.de/en/migration-ecology) with a main research interest and passion in bird migration. I care a lot about getting the science right and I strive for modest, open, reproducible and fair research. Currently, I'm working on a project focussing on offshore songbird migration across the North Sea using [motus](https://motus.org)-powered radio-tracking. [Julia](https://julialang.org/), [R](https://www.r-project.org/) and [Stan](https://mc-stan.org/) are my go-to languages for applied data analysis. 
 
 I'm also a keen birder, freelance ornithological consultant and bird ringer with a penchant for Warblers and Chats.
 
