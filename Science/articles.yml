@@ -14,7 +14,7 @@
     url: https://github.com/g-rppl/spring_migDist
     icon: fa-brands fa-github
   - name: Poster
-    url: ./spring_migDist/poster_DOG_2022/poster.pdf
+    url: ./spring_migDist/poster.pdf
     icon: fa-regular fa-note-sticky
 
 - title: "Departure, routing and landing decisions of long-distance migratory songbirds in relation to weather"
